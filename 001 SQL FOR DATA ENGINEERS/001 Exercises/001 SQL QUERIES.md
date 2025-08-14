@@ -20,27 +20,10 @@ For example, `SELECT` is an SQL keyword used to retrieve information from a tabl
 The output returned by a SQL query is called a resultset.
 
 ---
-## Exercises
+## EXERCISE
 Before moving to the exercises, we need a platform with tables and data.  
 For this, we have a setup file available inside the same directory: [000 EXECUTE THIS FIRST.md](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/001%20Exercises/000%20EXECUTE%20THIS%20FIRST.md)
 
----
-### 1. Retrieving 1 field from patrons table
-```sql
-SELECT name FROM patrons;
-```
-### 2. Retrieving 2 fields from patrons table
-```sql
-SELECT card_id, name FROM patrons;
-```
-### 3. Retrieving 3 fields from patrons table
-```sql
-SELECT card_id, name, join_year FROM patrons;
-```
-### 4. Retrieving multiple fields from patrons table
-```sql
-SELECT card_id, name, join_year, fines FROM patrons;
-```
 ---
 ## **Contributing** 🤝
 
