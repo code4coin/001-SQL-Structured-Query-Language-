@@ -1,4 +1,4 @@
-# 001 SQL (Structured Query Language)
+# SQL (Structured Query Language)
 
 Welcome to the **001 SQL repository** – your complete resource hub for learning, practicing, and mastering SQL. This repository is designed for anyone who wants to understand SQL from basics to advanced topics, prepare for interviews, and stay updated with best practices.
 
