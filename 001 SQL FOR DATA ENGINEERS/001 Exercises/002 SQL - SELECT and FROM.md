@@ -23,23 +23,28 @@ For this, we have a setup file available inside the same directory: [000 EXECUTE
 ---
 ### 1. Retrieving 1 field from patrons table
 ```sql
-SELECT name FROM patrons;
+SELECT name
+FROM patrons;
 ```
 ### 2. Retrieving 2 fields from patrons table
 ```sql
-SELECT card_id, name FROM patrons;
+SELECT card_id, name
+FROM patrons;
 ```
 ### 3. Retrieving 3 fields from patrons table
 ```sql
-SELECT card_id, name, join_year FROM patrons;
+SELECT card_id, name, join_year
+FROM patrons;
 ```
 ### 4. Retrieving multiple fields from patrons table
 ```sql
-SELECT card_id, name, join_year, fines FROM patrons;
+SELECT card_id, name, join_year, fines
+FROM patrons;
 ```
 ### 5. Retrieving all fields from patrons table
 ```sql
-SELECT * FROM patrons;
+SELECT *
+FROM patrons;
 ```
 ---
 ## **Contributing** 🤝
