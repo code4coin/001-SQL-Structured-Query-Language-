@@ -69,7 +69,9 @@ INSERT INTO Checkouts (checkout_id, card_id, book_title, checkout_date, return_d
 (104, 3, 'Pride and Prejudice', '2025-08-02', '2025-08-16'),
 (105, 5, 'Moby Dick', '2025-08-04', '2025-08-18');
 
-## Contributing 🤝
+---
+
+## **Contributing** 🤝
 
 We welcome contributions! You can:
 
@@ -81,13 +83,13 @@ Please open a **pull request** or **issue** to contribute.
 
 ---
 
-## License 📄
+## **License** 📄
 
 This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
 
 ---
 
-## More Resources 🔗
+## **More Resources** 🔗
 
 Stay connected and explore more content:
 
