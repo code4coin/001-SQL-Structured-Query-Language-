@@ -41,7 +41,7 @@ FROM patrons;
 SELECT card_id, name, join_year, fines
 FROM patrons;
 ```
-### 5. Retrieving all fields from patrons table
+### 5. Retrieving ALL fields from patrons table
 ```sql
 SELECT *
 FROM patrons;
