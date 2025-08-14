@@ -52,3 +52,29 @@ INSERT INTO Checkouts (checkout_id, card_id, book_title, checkout_date, return_d
 
 ```  
 ---
+
+## **Contributing** 🤝
+
+We welcome contributions! You can:
+
+- Add new SQL exercises
+- Improve existing chapters or examples
+- Share interview questions or projects
+
+Please open a **pull request** or **issue** to contribute.
+
+---
+
+## **License** 📄
+
+This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
+
+---
+
+## **More Resources** 🔗
+
+Stay connected and explore more content:
+
+- **LinkedIn:** [https://www.linkedin.com/in/nitin22/](https://www.linkedin.com/in/nitin22/)
+- **YouTube:** [https://www.youtube.com/@code4coin](https://www.youtube.com/@code4coin)
+- **Instagram:** [https://www.instagram.com/code4coin/](https://www.instagram.com/code4coin/)
