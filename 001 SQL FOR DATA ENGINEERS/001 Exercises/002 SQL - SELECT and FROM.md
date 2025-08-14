@@ -3,6 +3,13 @@
 ## KEYWORDS
 - **`SELECT`** – Used to retrieve data from one or more tables in a relational database.  
 - **`FROM`** – Specifies the table(s) from which to retrieve the data.
+
+---
+## QUERY FORMAT
+```sql
+SELECT field_name
+FROM table_name;
+```
 ---
 ## TIP
 Order of execution for keywords `SELECT` and `FROM`
@@ -29,6 +36,10 @@ SELECT card_id, name, join_year FROM patrons;
 ### 4. Retrieving multiple fields from patrons table
 ```sql
 SELECT card_id, name, join_year, fines FROM patrons;
+```
+### 5. Retrieving all fields from patrons table
+```sql
+SELECT * FROM patrons;
 ```
 ---
 ## **Contributing** 🤝
