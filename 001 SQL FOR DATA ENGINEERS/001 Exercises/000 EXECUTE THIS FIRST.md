@@ -34,6 +34,16 @@ CREATE TABLE Checkouts (
     FOREIGN KEY (card_id) REFERENCES Patrons(card_id)
 );
 
+-- 3. Create employee table
+DROP TABLE IF EXISTS employee;
+CREATE TABLE employee (
+    emp_id INT PRIMARY KEY,
+    dept_id INT,
+    name VARCHAR(100),
+    age INT,
+    year_hired INT
+);
+
 -- Insert sample data into Patrons
 INSERT INTO Patrons (card_id, name, join_year, fines) VALUES
 (1, 'Jasmin Lee', 2022, 2.05),
@@ -49,6 +59,18 @@ INSERT INTO Checkouts (checkout_id, card_id, book_title, checkout_date, return_d
 (103, 2, 'To Kill a Mockingbird', '2025-08-05', '2025-08-19'),
 (104, 3, 'Pride and Prejudice', '2025-08-02', '2025-08-16'),
 (105, 5, 'Moby Dick', '2025-08-04', '2025-08-18');
+
+-- Insert sample data into employee
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (1, 101, 'John',     30, 2020);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (2, 102, 'Jane',     28, 2021);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (3, 101, 'Michael',  35, 2019);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (4, 103, 'Emily',    29, 2021);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (5, 104, 'David',    32, 2020);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (6, 102, 'Sarah',    26, 2018);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (7, 103, 'Chris',    31, 2020);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (8, 101, 'Megan',    27, 2021);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (9, 104, 'Robert',   38, 2019);
+INSERT INTO employee (emp_id, dept_id, name, age, year_hired) VALUES (10,104,'Patricia',  33, 2021);
 
 ```  
 ---
