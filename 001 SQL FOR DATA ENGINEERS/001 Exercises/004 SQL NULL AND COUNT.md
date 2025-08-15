@@ -1,4 +1,4 @@
-# SQL - COUNT
+# SQL - NULL AND COUNT
 ---
 ## KEYWORDS
 - **`NULL`** - A marker in a table that represents missing, undefined, or unknown data. It’s not zero or blank, just the absence of a value.
@@ -17,10 +17,12 @@ FROM table_name;
 - The COUNT() function returns the number of non-NULL values in a column, or the total number of rows when using COUNT(*).
 - Single entity only: COUNT() can only operate on one column at a time or the entire table with *.
 - Why multiple columns fail: SQL does not allow multiple columns directly in COUNT() because it expects a single expression to aggregate. To count unique combinations of multiple columns, you need COUNT(DISTINCT ROW(col1, col2)) in PostgreSQL or concatenate columns as COUNT(DISTINCT col1 + " " + col2) in MySQL.
-- **Order of Execution**
-  1.  **`FROM`**
-  2.  **`SELECT`** : COUNT(), DISTINCT (Execute as part of SELECT)
-  3.  **`LIMIT`**
+- **`Order of Execution`**
+  1. `FROM`– Determines the tables to retrieve data from and performs joins if any.
+  2. `SELECT`– Chooses which columns or expressions to return.
+     - `DISTINCT`– Removes duplicate rows from the result set.
+     - `COUNT` - Counts rows or values
+  3. `LIMIT` - – Restricts the number of rows returned or skips rows.
 ---
 ## EXERCISE
 Before moving to the exercises, we need a platform with tables and data.  
