@@ -1,4 +1,4 @@
-# SQL - SELECT and FROM
+# SQL - SELECT AND FROM
 ---
 ## KEYWORDS
 - **`SELECT`** – Choose the columns or expressions to return.  
