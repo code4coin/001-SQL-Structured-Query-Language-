@@ -47,6 +47,18 @@ SELECT *
 FROM patrons;
 ```
 ---
+## PRACTISE
+### 1. Write a query to retrieve field `book_title` from `checkouts` table
+```sql
+SELECT book_title
+FROM checkouts;
+```
+### 2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
+```sql
+SELECT *
+FROM checkouts;
+```
+---
 ## **Contributing** 🤝
 
 We welcome contributions! You can:
