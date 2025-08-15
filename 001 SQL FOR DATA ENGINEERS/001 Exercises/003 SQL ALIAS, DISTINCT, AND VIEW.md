@@ -58,7 +58,7 @@ FROM employees;
 SELECT DISTINCT year_hired as joining_year
 FROM employees;
 ```
-### 3. Create `VIEW' for distinct values for `year_hired` as `joining_year` from `employees` table
+### 3. Create `VIEW` for distinct values for `year_hired` as `joining_year` from `employees` table
 ```sql
 CREATE VIEW employee_hired_years AS
 SELECT DISTINCT year_hired as joining_year
