@@ -1,7 +1,7 @@
 # SQL - SELECT and FROM
 ---
 ## KEYWORDS
-- **`SELECT`** – Used to retrieve data from one or more tables in a relational database.  
+- **`SELECT`** – Choose the columns or expressions to return.  
 - **`FROM`** – Specifies the table(s) from which to retrieve the data.
 
 ---
@@ -12,9 +12,9 @@ FROM table_name;
 ```
 ---
 ## TIP
-Order of execution for keywords `SELECT` and `FROM`
-  1. **`FROM`** – Identify the table(s) involved.   
-  2. **`SELECT`** – Choose the columns or expressions to return. 
+**Order of Execution** for keywords `SELECT` and `FROM`
+  1. **`FROM` – Execute first**: It identify tables needed for the query
+  2. **`SELECT` – Execute second**: point column needed to retrieve as part of resultset 
 ---
 ## EXERCISE
 Before moving to the exercises, we need a platform with tables and data.  
