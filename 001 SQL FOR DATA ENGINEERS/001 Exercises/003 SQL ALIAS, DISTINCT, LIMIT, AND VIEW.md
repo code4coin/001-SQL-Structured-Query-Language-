@@ -68,6 +68,12 @@ FROM employee_hired_years;
 ```
 ---
 ## PRACTISE
+1. Write a query to alias column `year_hired` as `joining_year` from `employees` table
+2. Retrieve distinct values for `year_hired` as `joining_year` from `employees` table
+3. Retrieve only 5 distinct values for `year_hired` as `joining_year` from `employees` table
+4. Create `VIEW` for distinct values for `year_hired` as `joining_year` from `employees` table
+---
+## SOLUTIONS
 ### 1. Write a query to alias column `year_hired` as `joining_year` from `employees` table
 ```sql
 SELECT year_hired as joining_year
