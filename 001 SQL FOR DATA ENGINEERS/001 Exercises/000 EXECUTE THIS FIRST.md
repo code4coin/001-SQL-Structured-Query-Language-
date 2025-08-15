@@ -44,6 +44,15 @@ CREATE TABLE employees (
     year_hired INT
 );
 
+-- 4. Create people table
+DROP TABLE IF EXISTS people;
+CREATE TABLE people (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    birthdate DATE,
+    email TEXT
+);
+
 -- Insert sample data into Patrons
 INSERT INTO Patrons (card_id, name, join_year, fines) VALUES
 (1, 'Jasmin Lee', 2022, 2.05),
@@ -72,6 +81,18 @@ INSERT INTO employees (emp_id, dept_id, name, age, year_hired) VALUES (8, 101, '
 INSERT INTO employees (emp_id, dept_id, name, age, year_hired) VALUES (9, 104, 'Robert',   38, 2019);
 INSERT INTO employees (emp_id, dept_id, name, age, year_hired) VALUES (10,104,'Patricia',  33, 2021);
 
+-- Insert sample data into people
+INSERT INTO people (id, name, birthdate, email) VALUES
+(1, 'Alice', '1990-05-12', 'alice@example.com'),
+(2, 'Bob', '1985-07-23', 'bob@example.com'),
+(3, 'Charlie', '1992-01-15', 'charlie@example.com'),
+(4, 'Alice', '1990-05-12', 'alice@example.com'),
+(5, 'David', NULL, 'david@example.com'),
+(6, 'Eve', '1988-11-02', NULL),
+(7, NULL, '1995-03-10', 'unknown@example.com'),
+(8, 'Frank', NULL, NULL),
+(9, 'Bob', '1985-07-23', 'bob@example.com'),
+(10, 'Grace', '1993-08-30', 'grace@example.com');
 ```  
 ---
 
