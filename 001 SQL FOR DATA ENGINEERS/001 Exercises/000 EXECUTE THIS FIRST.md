@@ -1,16 +1,16 @@
-# Execute This First
-Below are the table structure and data, which will be utilized for the sql exeution, and learning new concepts
+# EXECUTE THIS FIRST
+Below are the table structure and data, which will be utilized for the sql exercises, and learning new concepts.
+Therefore, access the given platform and execute sql queries from the section "SQL QUERIES TO EXECUTE" to create tables with sample data.
 
 ---
 
-## Platform
-We will utilize Programiz online SQL Complier website to create these tables
-
+## PLATFORM
+We will utilize Programiz online SQL Complier website to create these tables 
 Practice SQL commands online using: [Programiz SQL Online Compiler](https://www.programiz.com/sql/online-compiler)
 
 ---
 
-## SQL Commands
+## SQL QUERIES TO EXECUTE
 **SQL Foundation: Below SQL table will be used across all exercises**
 
 ```sql
