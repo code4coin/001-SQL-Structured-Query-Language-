@@ -95,8 +95,7 @@ INSERT INTO people (id, name, birthdate, email) VALUES
 (10, 'Grace', '1993-08-30', 'grace@example.com');
 ```  
 ---
-
-## **Contributing** 🤝
+## **CONTRIBUTING** 🤝
 
 We welcome contributions! You can:
 
@@ -107,14 +106,12 @@ We welcome contributions! You can:
 Please open a **pull request** or **issue** to contribute.
 
 ---
-
-## **License** 📄
+## **LICENSE** 📄
 
 This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
 
 ---
-
-## **More Resources** 🔗
+## **MORE RESOURCES** 🔗
 
 Stay connected and explore more content:
 
