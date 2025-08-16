@@ -129,7 +129,7 @@ Using patrons table with fields - card_id, name, join_year, fines
    WHERE join_year <> 2022;
    ```
 ---
-## **Contributing** 🤝
+## **CONTRIBUTING** 🤝
 
 We welcome contributions! You can:
 
@@ -140,12 +140,12 @@ We welcome contributions! You can:
 Please open a **pull request** or **issue** to contribute.
 
 ---
-## **License** 📄
+## **LICENSE** 📄
 
 This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
 
 ---
-## **More Resources** 🔗
+## **MORE RESOURCES** 🔗
 
 Stay connected and explore more content:
 
