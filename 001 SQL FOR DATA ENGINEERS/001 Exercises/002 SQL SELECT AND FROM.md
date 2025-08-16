@@ -1,9 +1,12 @@
 # SQL - SELECT AND FROM
 ---
 ## KEYWORDS
-- **`SELECT`** – Choose the columns or expressions to return.  
-- **`FROM`** – Specifies the table(s) from which to retrieve the data.
-
+- **SELECT**
+- **FROM**
+---
+## DEFINITION
+- **SELECT** – Choose the columns or expressions to return.  
+- **FROM** – Specifies the table(s) from which to retrieve the data.
 ---
 ## QUERY FORMAT
 ```sql
