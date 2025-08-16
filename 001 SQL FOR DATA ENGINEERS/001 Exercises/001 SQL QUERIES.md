@@ -25,7 +25,7 @@ Before moving to the exercises, we need a platform with tables and data.
 For this, we have a setup file available inside the same directory: [000 EXECUTE THIS FIRST.md](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/001%20Exercises/000%20EXECUTE%20THIS%20FIRST.md)
 
 ---
-## **Contributing** 🤝
+## **CONTRIBUTING** 🤝
 
 We welcome contributions! You can:
 
@@ -36,12 +36,12 @@ We welcome contributions! You can:
 Please open a **pull request** or **issue** to contribute.
 
 ---
-## **License** 📄
+## **LICENSE** 📄
 
 This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
 
 ---
-## **More Resources** 🔗
+## **MORE RESOURCES** 🔗
 
 Stay connected and explore more content:
 
