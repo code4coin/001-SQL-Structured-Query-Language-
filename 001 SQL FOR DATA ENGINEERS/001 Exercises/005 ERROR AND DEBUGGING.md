@@ -7,6 +7,14 @@
 - **Case Sensitive**
 - **Incorrect Keyword**
 ---
+## DEFINITION
+- **Misspelled Field Names**: Using a column name that does not exist in the table.  
+- **Incorrect Table Reference**: Referring to a table that does not exist in the database.  
+- **Missing Commas**: Forgetting commas between column names in a SELECT statement.  
+- **Case Sensitive**: Using incorrect capitalization for table or column names in a case-sensitive database.  
+- **Incorrect Keyword**: Typing an SQL keyword incorrectly, causing a syntax error.
+
+---
 ## TIPS
 1. Error debugging is an art; mastering it makes you a faster developer.
 2. Maintain a concise log of the most common mistakes—misspelled keywords, missing commas, incorrect table names—and you’ll turn every “ugh” into a thirty-second fix.
