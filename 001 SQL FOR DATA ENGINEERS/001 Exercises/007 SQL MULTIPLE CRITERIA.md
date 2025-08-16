@@ -86,7 +86,7 @@ WHERE (dept_id = 103 OR dept_id = 104)
 4. Return all books that are in **department 102 OR 105**, **AND** have a **return date before '2025-08-18'**.
 5. Return all books that are **in department 101 OR 104**, **AND** borrowed **between '2025-08-01' and '2025-08-03'**.
 ---
-## SOLUTIONS
+## ✅SOLUTIONS
 ### 1. Return all books that are in **department 101 OR 103**.
 ```sql
 SELECT * 
