@@ -32,7 +32,7 @@ FROM table_names
 WHERE column_name BETWEEN number_01 AND number_02;
 ```
 ---
-## 💡Tip to remember
+## 💡Tip TO REMEMBER
 
 Think of it like interviewing employees:
 - **OR** = “I'll accept *this* OR *that* candidate.”
