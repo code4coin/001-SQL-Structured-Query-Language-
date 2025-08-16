@@ -54,6 +54,7 @@ CREATE TABLE people (
 );
 
 -- 5. Create books table
+DROP TABLE IF EXISTS books;
 CREATE TABLE books (
     book_id INT PRIMARY KEY,
     dept_id INT,
@@ -105,12 +106,11 @@ INSERT INTO people (id, name, birthdate, email) VALUES
 
 -- -- Insert data into books
 INSERT INTO books (book_id, dept_id, title, borrow_date, return_date) VALUES
-(101, 1, 'The Great Gatsby', '2025-08-01', '2025-08-15'),
-(102, 2, '1984', '2025-08-03', '2025-08-17'),
-(103, 2, 'To Kill a Mockingbird', '2025-08-05', '2025-08-19'),
-(104, 3, 'Pride and Prejudice', '2025-08-02', '2025-08-16'),
-(105, 5, 'Moby Dick', '2025-08-04', '2025-08-18');
-
+(101, 101, 'The Great Gatsby', '2025-08-01', '2025-08-15'),
+(102, 102, '1984', '2025-08-03', '2025-08-17'),
+(103, 102, 'To Kill a Mockingbird', '2025-08-05', '2025-08-19'),
+(104, 101, 'Pride and Prejudice', '2025-08-02', '2025-08-16'),
+(105, 102, 'Moby Dick', '2025-08-04', '2025-08-18');
 ```
 
 ---
