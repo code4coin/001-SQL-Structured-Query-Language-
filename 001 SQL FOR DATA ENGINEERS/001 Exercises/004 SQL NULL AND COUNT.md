@@ -1,8 +1,12 @@
 # SQL - NULL AND COUNT
 ---
 ## KEYWORDS
-- **`NULL`** - A marker in a table that represents missing, undefined, or unknown data. It’s not zero or blank, just the absence of a value.
-- **`COUNT`** – count number of records in a table
+- **NULL**
+- **COUNT**
+- ---
+## DEFINITION
+- **NULL** - A marker in a table that represents missing, undefined, or unknown data. It’s not zero or blank, just the absence of a value.
+- **COUNT** – count number of records in a table
 ---
 ## QUERY FORMAT
 ```sql
