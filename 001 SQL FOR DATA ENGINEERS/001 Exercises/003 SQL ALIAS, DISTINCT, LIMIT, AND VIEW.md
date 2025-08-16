@@ -1,10 +1,16 @@
 # SQL - ALIAS, DISTINCT, LIMIT, AND VIEW
 ---
 ## KEYWORDS
-- **`ALIAS`** – Rename colummn and table names in the result set  
-- **`DISTINCT`** – returns unique values of records.
-- **`LIMIT`** – restrict output records in resultset. Limit make sure output has atmost records LIMIT mentions.
-- **`VIEW`** – store query in sql, can be accessed as a table.
+- **ALIAS**
+- **DISTINCT**
+- **LIMIT**
+- **VIEW**
+---
+## DEFINITION
+- **ALIAS** – Rename colummn and table names in the result set  
+- **DISTINCT** – returns unique values of records.
+- **LIMIT** – restrict output records in resultset. Limit make sure output has atmost records LIMIT mentions.
+- **VIEW** – store query in sql, can be accessed as a table.
 ---
 ## QUERY FORMAT
 ```sql
