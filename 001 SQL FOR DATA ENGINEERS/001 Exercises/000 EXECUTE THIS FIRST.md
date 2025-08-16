@@ -63,6 +63,21 @@ CREATE TABLE books (
     return_date DATE
 );
 
+-- 6. create movie table
+DROP TABLE IF EXISTS movies;
+
+CREATE TABLE movies (
+    movie_id INT PRIMARY KEY,
+    title VARCHAR(100),
+    genre VARCHAR(50),
+    director VARCHAR(100),
+    release_year INT,
+    country VARCHAR(50),
+    runtime_minutes INT,
+    rating FLOAT
+);
+
+------------------------------------------------------------------------------------
 -- Insert sample data into Patrons
 INSERT INTO Patrons (card_id, name, join_year, fines) VALUES
 (1, 'Jasmin Lee', 2022, 2.05),
@@ -111,6 +126,21 @@ INSERT INTO books (book_id, dept_id, title, borrow_date, return_date) VALUES
 (103, 102, 'To Kill a Mockingbird', '2025-08-05', '2025-08-19'),
 (104, 101, 'Pride and Prejudice', '2025-08-02', '2025-08-16'),
 (105, 102, 'Moby Dick', '2025-08-04', '2025-08-18');
+
+-- Insert into movie table
+INSERT INTO movies (movie_id, title, genre, director, release_year, country, runtime_minutes, rating) VALUES
+(1,  'Inception',                'Science Fiction', 'Christopher Nolan', 2010, 'USA',    148, 8.8),
+(2,  'Spirited Away',            'Animation',       'Hayao Miyazaki',    2001, 'Japan',  125, 8.6),
+(3,  'Parasite',                 'Thriller',        'Bong Joon-ho',      2019, 'South Korea', 132, 8.5),
+(4,  'The Dark Knight',          'Action',          'Christopher Nolan', 2008, 'USA',    152, 9.0),
+(5,  'Interstellar',             'Science Fiction', 'Christopher Nolan', 2014, 'USA',    169, 8.7),
+(6,  'La La Land',               'Musical',         'Damien Chazelle',   2016, 'USA',    128, 8.0),
+(7,  'The Grand Budapest Hotel', 'Comedy',          'Wes Anderson',      2014, 'Germany',  99, 8.1),
+(8,  'Oldboy',                   'Thriller',        'Park Chan-wook',    2003, 'South Korea', 120, 8.4),
+(9,  'Amélie',                   'Romance',         'Jean-Pierre Jeunet',2001, 'France', 122, 8.3),
+(10, 'Your Name',                'Animation',       'Makoto Shinkai',    2016, 'Japan',  106, 8.4);
+
+----- sql ending
 ```
 
 ---
