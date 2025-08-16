@@ -53,6 +53,15 @@ CREATE TABLE people (
     email TEXT
 );
 
+-- 5. Create books table
+CREATE TABLE books (
+    book_id INT PRIMARY KEY,
+    dept_id INT,
+    title VARCHAR(255),
+    borrow_date DATE,
+    return_date DATE
+);
+
 -- Insert sample data into Patrons
 INSERT INTO Patrons (card_id, name, join_year, fines) VALUES
 (1, 'Jasmin Lee', 2022, 2.05),
@@ -93,7 +102,17 @@ INSERT INTO people (id, name, birthdate, email) VALUES
 (8, 'Frank', NULL, NULL),
 (9, 'Bob', '1985-07-23', 'bob@example.com'),
 (10, 'Grace', '1993-08-30', 'grace@example.com');
-```  
+
+-- -- Insert data into books
+INSERT INTO books (book_id, dept_id, title, borrow_date, return_date) VALUES
+(101, 1, 'The Great Gatsby', '2025-08-01', '2025-08-15'),
+(102, 2, '1984', '2025-08-03', '2025-08-17'),
+(103, 2, 'To Kill a Mockingbird', '2025-08-05', '2025-08-19'),
+(104, 3, 'Pride and Prejudice', '2025-08-02', '2025-08-16'),
+(105, 5, 'Moby Dick', '2025-08-04', '2025-08-18');
+
+```
+
 ---
 ## **CONTRIBUTING** 🤝
 
