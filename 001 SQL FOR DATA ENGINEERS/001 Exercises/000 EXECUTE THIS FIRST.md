@@ -65,7 +65,6 @@ CREATE TABLE books (
 
 -- 6. create movie table
 DROP TABLE IF EXISTS movies;
-
 CREATE TABLE movies (
     movie_id INT PRIMARY KEY,
     title VARCHAR(100),
