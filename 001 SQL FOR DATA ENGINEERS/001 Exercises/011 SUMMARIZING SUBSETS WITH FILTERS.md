@@ -4,7 +4,7 @@
 - **Aggregate Functions** – `SUM()`, `AVG()`, `MIN()`, `MAX()`, `COUNT()`
 - **Summarizing Subset Data**
 - **WHERE Clause**
-- **ROUND()`**
+- **ROUND()**
 ---
 ## 📖DEFINITION
 - **Summarizing Subset Data** – Use SQL aggregate functions to calculate totals, averages, minimums, maximums, and counts for a subset/ portion of records.  
