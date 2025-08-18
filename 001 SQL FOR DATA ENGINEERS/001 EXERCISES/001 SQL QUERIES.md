@@ -1,38 +1,31 @@
-# TITLE
----
-## 🔑KEYWORDS
-- ** **
----
-## 📖DEFINITION
-- ** ** – 
----
-## 🧱QUERY FORMAT
-```sql
-
-```
----
-## 💡TIP TO REMEMBER
+# SQL QUERIES
 
 ---
-## 💪EXERCISE
+## Introducing SQL Queries
+Structured data resides inside relational databases hosted on servers. It becomes essential to have a medium of communication with the data.  
+Hence, SQL (Structured Query Language) came into existence.
+
+- SQL is a query language, meaning queries are used to interact with data.  
+- SQL resembles English, making it easier to read and maintain.  
+- It is the industry standard for any relational database.
+  
+---
+## SQL Keywords
+As mentioned, SQL is a query language, which means you send queries to retrieve information.  
+Therefore, it is necessary to keep a few words reserved for specific functions.  
+For example, `SELECT` is an SQL keyword used to retrieve information from a table.
+
+---
+## SQL Resultset 
+The output returned by a SQL query is called a resultset.
+
+---
+## EXERCISE
 Before moving to the exercises, we need a platform with tables and data.  
 For this, we have a setup file available inside the same directory: [000 EXECUTE THIS FIRST.md](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/001%20Exercises/000%20EXECUTE%20THIS%20FIRST.md)
 
-### 1. 
-```sql
-
-```
 ---
-## 🧠Practise
-1. 
----
-## ✅SOLUTIONS
-### 1. 
-```sql
-
-```
----
-## 🤝**CONTRIBUTING** 
+## **CONTRIBUTING** 🤝
 
 We welcome contributions! You can:
 
@@ -43,12 +36,12 @@ We welcome contributions! You can:
 Please open a **pull request** or **issue** to contribute.
 
 ---
-## 📄**LICENSE** 
+## **LICENSE** 📄
 
 This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
 
 ---
-## 🔗**MORE RESOURCES** 
+## **MORE RESOURCES** 🔗
 
 Stay connected and explore more content:
 
