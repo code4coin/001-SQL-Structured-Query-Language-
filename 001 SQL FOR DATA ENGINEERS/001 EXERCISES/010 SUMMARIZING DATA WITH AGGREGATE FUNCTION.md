@@ -36,7 +36,7 @@ FROM   table_name;
 ---
 ## 💪EXERCISE
 Before moving to the exercises, we need a platform with tables and data.  
-For this, we have a setup file available inside the same directory: [000 EXECUTE THIS FIRST.md](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/001%20Exercises/000%20EXECUTE%20THIS%20FIRST.md)
+For this, we have a setup file available inside the same directory: [CLICK AND EXECUTE FILE FIRST](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)
 ### 1. Average movie rating  
 ```sql
 SELECT AVG(rating) AS avg_rating
