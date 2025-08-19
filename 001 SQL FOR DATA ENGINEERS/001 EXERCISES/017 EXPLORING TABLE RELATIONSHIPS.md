@@ -133,6 +133,105 @@ JOIN   actors a2         ON ma2.actor_id = a2.actor_id
 JOIN   movies m          ON m.movie_id = ma1.movie_id
 ORDER  BY m.title, actor_1, actor_2;
 ```
+The previous solution works well **only when IDs are in sequential order**.  
+
+Example:
+
+| movie_id | actor_id |
+|----------|----------|
+| 1        | 1        |
+| 1        | 2        |
+| 1        | 3        |
+
+- Using the logic with `>` operator:  
+  - Record 1 matches with 2 and 3  
+  - Record 2 matches only with 3 (ignores 1 due to `>` logic)  
+
+✅ Works because IDs are **sequential**.
+
+---
+
+### ❌ Issue with Non-Sequential IDs
+
+If IDs are **not sequential**:
+
+| movie_id | actor_id |
+|----------|----------|
+| 1        | a1       |
+| 1        | g23      |
+| 1        | wd3      |
+
+- Using the same logic now results in **duplicate pairs**:
+
+| movie_id | actor1 | actor2 |
+|----------|--------|--------|
+| 1        | a1     | g23    |
+| 1        | a1     | wd3    |
+| 1        | g23    | a1     |
+| 1        | wd3    | a1     |
+
+- Swapping positions creates duplicates.  
+- Problem: **pair of actors are duplicated** because logic relies on sequential IDs.
+
+---
+
+## 🔹 Solution Approach
+
+1. **Select only one record per movie** from `movie_actors` using `ROW_NUMBER()`:
+```sql
+WITH one_actor_per_movie AS (
+    SELECT
+        movie_id,
+        actor_id,
+        ROW_NUMBER() OVER (PARTITION BY movie_id ORDER BY actor_id) AS rn
+    FROM movie_actors
+)
+SELECT *
+FROM one_actor_per_movie
+WHERE rn = 1;
+```
+Processed Table (one record per movie):
+| movie_id | actor_id |
+|----------|----------|
+| 1        | a1       |
+
+Step 2: Join back with original movie_actors table
+```sql
+SELECT o.movie_id, o.actor_id AS actor1, m.actor_id AS actor2
+FROM one_actor_per_movie o
+INNER JOIN movie_actors m
+    ON o.movie_id = m.movie_id
+    AND o.actor_id <> m.actor_id;
+```
+Resulting Pairs Table:
+| movie_id | actor1 | actor2 |
+|----------|--------|--------|
+| 1        | a1     | g23    |
+| 1        | a1     | wd3    |
+
+FULL SOLUTION
+```sql
+
+SELECT MOVIES.TITLE,
+ACT_01.ACTOR_NAME,
+ACT_02.ACTOR_NAME
+FROM (SELECT MOVIE_ACTORS_02.MOVIE_ID,
+MOVIE_ACTORS_02.ACTOR_ID AS ACTOR_ID_01,
+MOVIE_ACTORS.ACTOR_ID AS ACTOR_ID_02
+FROM (SELECT MOVIE_ID, ACTOR_ID
+FROM (SELECT ROW_NUMBER() OVER (PARTITION BY MOVIE_ID) AS ROW_NUM,
+MOVIE_ID,
+ACTOR_ID
+      FROM MOVIE_ACTORS) AS MOVIE_ACTORS_01
+      WHERE ROW_NUM = 1) AS MOVIE_ACTORS_02
+      INNER JOIN MOVIE_ACTORS 
+      ON MOVIE_ACTORS_02.MOVIE_ID = MOVIE_ACTORS.MOVIE_ID
+      AND MOVIE_ACTORS_02.ACTOR_ID <> MOVIE_ACTORS.ACTOR_ID ) AS MOVIE_ACTORS_03
+      INNER JOIN MOVIES ON MOVIE_ACTORS_03.MOVIE_ID = MOVIES.MOVIE_ID
+      INNER JOIN ACTORS AS ACT_01 ON MOVIE_ACTORS_03.ACTOR_ID_01 = ACT_01.ACTOR_ID
+INNER JOIN ACTORS AS ACT_02 ON MOVIE_ACTORS_03.ACTOR_ID_02 = ACT_02.ACTOR_ID;
+```
+
 ### 3. High-Rated Genre Snapshot
 List all genres with an average rating ≥ 8.0 based on user reviews.
 Return: genre, average rating, total reviews.
