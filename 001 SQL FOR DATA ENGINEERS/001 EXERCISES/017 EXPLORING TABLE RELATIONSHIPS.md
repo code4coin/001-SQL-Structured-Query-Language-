@@ -15,6 +15,22 @@
 - **Foreign Key** – links child rows to parent rows  
 - **Normalization** – splitting data into related tables to reduce redundancy  
 - **Cardinality** – how many rows on each side of the relationship (1:1, 1:N, M:N).
+- **Order of Execution**
+
+	| Step | Clause             | Mnemonic | Typical Purpose                                   |
+	| ---- | ------------------ | -------- | ------------------------------------------------- |
+	| 1    | `FROM` + `JOIN`    | **F**    | Build the raw data set (cartesian product → join) |
+	| 2    | `WHERE`            | **W**    | Row-level filtering (before grouping)             |
+	| 3    | `GROUP BY`         | **G**    | Form groups                                       |
+	| 4    | `HAVING`           | **H**    | Group-level filtering (after aggregation)         |
+	| 5    | `SELECT`           | **S**    | Compute columns & aliases                         |
+	| 6    | `DISTINCT`         | -        | Remove duplicate rows                             |
+	| 7    | `ORDER BY`         | **O**    | Sort the final projection                         |
+	| 8    | `LIMIT` / `OFFSET` | **L**    | Slice the sorted result set                       |
+
+- FROM → WHERE → GROUP → HAVING → SELECT → ORDER → LIMIT
+  F W G H S O L ≈ “Frodo Went Ghost Hunting, Sam Ordered Lembas.”	
+
 ---
 ## 🧱QUERY FORMAT
 ```sql
