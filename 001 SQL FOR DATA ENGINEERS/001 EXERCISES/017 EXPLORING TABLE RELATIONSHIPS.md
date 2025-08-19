@@ -93,16 +93,14 @@ WHERE d.director_name = 'Christopher Nolan';
 ```
 ---
 ## 🧠Practise
-1. Identify & Count Relationships
-Write a query that returns:
+1. Identify & Count Relationships: Write a query that returns:
 director name
 number of movies directed
 average runtime of those movies
-2. Actor Collaboration Matrix
-Find every pair of actors who have worked together in at least one movie.
+
+3. Actor Collaboration Matrix: Find every pair of actors who have worked together in at least one movie.
 Return: actor 1 name, actor 2 name, movie title.
-3. High-Rated Genre Snapshot
-List all genres with an average rating ≥ 8.0 based on user reviews.
+4. High-Rated Genre Snapshot: List all genres with an average rating ≥ 8.0 based on user reviews.
 Return: genre, average rating, total reviews.
 ---
 ## ✅SOLUTIONS
