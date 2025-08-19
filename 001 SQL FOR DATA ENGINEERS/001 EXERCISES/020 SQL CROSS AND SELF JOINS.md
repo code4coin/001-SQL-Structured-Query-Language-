@@ -105,6 +105,8 @@ WHERE m1.movie_id <> m2.movie_id
 1. Show every possible pairing of actor names with movie titles.
 2. How many rows are produced when you CROSS JOIN movies and actors?
 3. Rewrite exercise 1 using the older comma syntax: FROM actors, movies
+4. List every distinct pair of movies released in the same year (do not pair a movie with itself).
+5. Find all actors who share the same nationality but are not the same person.
 ---
 ## ✅SOLUTIONS
 
@@ -129,6 +131,28 @@ CROSS JOIN actors;
 SELECT a.actor_name,
        m.title
 FROM   actors a, movies m;
+```
+### 4. List every distinct pair of movies released in the same year (do not pair a movie with itself).
+```sql
+SELECT m1.title  AS movie1,
+       m2.title  AS movie2,
+       m1.release_year
+FROM   movies AS m1
+JOIN   movies AS m2
+  ON   m1.release_year = m2.release_year
+ AND   m1.movie_id     <> m2.movie_id
+ORDER BY m1.release_year, m1.title, m2.title;
+```
+### 5. Find all actors who share the same nationality but are not the same person.
+```sql
+SELECT a1.actor_name AS actor1,
+       a2.actor_name AS actor2,
+       a1.nationality
+FROM   actors AS a1
+JOIN   actors AS a2
+  ON   a1.nationality = a2.nationality
+ AND   a1.actor_id    <> a2.actor_id
+ORDER BY a1.nationality, a1.actor_name, a2.actor_name;
 ```
 ---
 ## 🤝**CONTRIBUTING** 
