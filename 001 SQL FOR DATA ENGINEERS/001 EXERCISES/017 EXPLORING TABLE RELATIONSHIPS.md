@@ -28,8 +28,9 @@
 	| 7    | `ORDER BY`         | **O**    | Sort the final projection                         |
 	| 8    | `LIMIT` / `OFFSET` | **L**    | Slice the sorted result set                       |
 
-- FROM → WHERE → GROUP → HAVING → SELECT → ORDER → LIMIT
-  F W G H S O L ≈ “Frodo Went Ghost Hunting, Sam Ordered Lembas.”	
+- **FROM → WHERE → GROUP → HAVING → SELECT → ORDER → LIMIT**
+
+   **F W G H S O L ≈ “Frodo Went Ghost Hunting, Sam Ordered Lembas.”**
 
 ---
 ## 🧱QUERY FORMAT
