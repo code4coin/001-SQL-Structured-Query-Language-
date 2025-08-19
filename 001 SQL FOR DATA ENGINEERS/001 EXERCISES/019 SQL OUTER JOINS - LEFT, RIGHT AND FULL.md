@@ -18,6 +18,7 @@
 ```sql
 SELECT column_names
 FROM table_main
+-- OUTER is optional in the query
 [LEFT | RIGHT | FULL OUTER] JOIN table_secondary
 ON condition;
 ```
