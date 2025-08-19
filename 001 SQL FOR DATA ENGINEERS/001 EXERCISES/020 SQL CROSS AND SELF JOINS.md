@@ -3,15 +3,29 @@
 ## 🔑KEYWORDS
 - **CROSS JOIN**
 - **CARTESIAN PRODUCT**
+- **Self Join**
+- **Alias**
 ---
 ## 📖DEFINITION
-- **CROSS JOIN** – A type of SQL join that produces all possible combinations of rows from two tables, also called a Cartesian product. Unlike INNER or OUTER JOINs, it does not require any relationship between the tables.
+- **CROSS JOIN** – A type of SQL join that produces all possible combinations of rows from two tables, also called a **Cartesian product**. Unlike INNER or OUTER JOINs, it does not require any relationship between the tables.
+- **SELF JOIN** – a regular `INNER`, `LEFT`, or `RIGHT` JOIN in which the **same table appears on both sides** of the `JOIN` keyword. Aliases (e.g., `m1`, `m2`) are used to treat one physical table as two logical tables so rows can be compared to other rows inside the same table.
 ---
 ## 🧱QUERY FORMAT
 ```sql
+-- 1. CROSS JOIN QUERY STRUCTURE
 SELECT <columns>
 FROM   left_table
 CROSS JOIN right_table;
+```
+```sql
+-- 2. SELF JOIN QUERY STRUCTURE
+-- NOTE: both tables used here are same tables, defer by assigning different aliases 
+SELECT <alias1>.<col>,
+       <alias2>.<col>
+FROM   <table> AS <alias1> 
+JOIN   <table> AS <alias2>
+  ON   <alias1>.<key> = <alias2>.<key>   -- matching condition
+ AND   <alias1>.<id>  <> <alias2>.<id>; -- optional anti-self filter
 ```
 ---
 ## 💡TIP TO REMEMBER
@@ -20,6 +34,9 @@ CROSS JOIN right_table;
 - CROSS JOIN generates all possible combinations of rows.
 - Use carefully on large tables to avoid extremely large result sets.
 - Can be filtered using WHERE for meaningful combinations.
+- Think of a self-join as **“make two copies of the table, then treat them like any other join.”**
+- Self join: Always add a <> condition to avoid pairing a row with itself.
+- Use INNER, LEFT, or other join types depending on the use-case — the keyword self is never written in SQL.
 
 ---
 ## 💪EXERCISE
@@ -45,6 +62,43 @@ WHERE m.genre = 'Sci-Fi' AND d.nationality = 'USA';
 SELECT COUNT(*) AS total_combinations
 FROM movies m
 CROSS JOIN directors d;
+```
+### 4. Find all pairs of movies released in the same year
+```sql
+SELECT m1.title  AS movie_1,
+       m2.title  AS movie_2,
+       m1.release_year
+FROM movies AS m1
+INNER JOIN movies AS m2
+  ON m1.release_year = m2.release_year
+WHERE m1.movie_id <> m2.movie_id;
+```
+
+### 5. List all combinations of movies directed by the same director, showing director name along with both movie titles
+```sql
+SELECT d.director_name,
+       m1.title AS movie_1,
+       m2.title AS movie_2
+FROM movies AS m1
+INNER JOIN movies AS m2
+  ON m1.director_id = m2.director_id
+INNER JOIN directors d
+  ON m1.director_id = d.director_id
+WHERE m1.movie_id <> m2.movie_id;
+```
+
+### 6. Count how many Sci-Fi movie pairs exist where both movies are directed by Christopher Nolan
+```sql
+SELECT COUNT(*) AS action_pairs_count
+FROM movies AS m1
+INNER JOIN movies AS m2
+  ON m1.director_id = m2.director_id
+INNER JOIN directors d
+  ON m1.director_id = d.director_id
+WHERE m1.movie_id <> m2.movie_id
+  AND d.director_name = 'Christopher Nolan'
+  AND m1.genre = 'Sci-Fi'
+  AND m2.genre = 'Sci-Fi';
 ```
 ---
 ## 🧠Practise
