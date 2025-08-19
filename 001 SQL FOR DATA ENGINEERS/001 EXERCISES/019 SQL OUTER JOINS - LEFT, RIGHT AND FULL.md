@@ -1,36 +1,31 @@
-# OUTER JOINS - LEFT AND RIGHT
+# OUTER JOINS - LEFT, RIGHT AND FULL
 ---
 
 ## 🔑KEYWORDS
 - **LEFT JOIN** 
 - **RIGHT JOIN**
+- **FULL JOIN**
 - **OUTER**
 ---
 ## 📖DEFINITION
 - **LEFT JOIN** – returns **all** rows from the **left** table plus matching rows from the right table; where no match exists, right-side columns show `NULL`.  
 - **RIGHT JOIN** – returns **all** rows from the **right** table plus matching rows from the left table; where no match exists, left-side columns show `NULL`.
+- **RIGHT JOIN** - returns all rows from both tables, using NULL for unmatched columns.
 - **OUTER** – unmatched rows are kept; missing columns filled with `NULL` 
 
 ---
 ## 🧱QUERY FORMAT
 ```sql
--- LEFT JOIN
-SELECT <columns>
-FROM   left_table  AS l
-LEFT  JOIN right_table AS r
-       ON l.key = r.key;
-```
-```sql
--- RIGHT JOIN
-SELECT <columns>
-FROM   left_table  AS l
-RIGHT JOIN right_table AS r
-       ON l.key = r.key;
+SELECT column_names
+FROM table_main
+[LEFT | RIGHT | FULL OUTER] JOIN table_secondary
+ON condition;
 ```
 ---
 ## 💡TIP TO REMEMBER
-**Think “Left keeps left, Right keeps right.”
+- **Think “Left keeps left, Right keeps right.”
 Any unmatched side gets NULL.**
+- **“Take everything from both tables, and fill gaps with NULL.”**
 
 ---
 ## 💪EXERCISE
@@ -60,6 +55,17 @@ SELECT d.director_name,
        m.title
 FROM   directors AS d
 LEFT  JOIN movies  AS m
+       ON d.director_id = m.director_id;
+```
+
+NOTE - As of 19-AUG-2025: Platform does not support RIGHT AND FULL OUTER JOINS
+### 4. Rewrite the second exercise as a FULL JOIN (swap tables) instead of using RIGHT JOIN.
+```sql
+-- FULL JOIN version of exercise 2
+SELECT d.director_name,
+       m.title
+FROM   directors AS d
+FULL  JOIN movies  AS m
        ON d.director_id = m.director_id;
 ```
 ---
