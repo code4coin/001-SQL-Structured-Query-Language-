@@ -64,6 +64,7 @@ WHERE  [NOT] EXISTS (
 * **“Semi keeps, anti skips.”** No extra columns are ever appended—only rows are filtered.
 * **Semi join (IN)** → alternative to **SET INTERSECT**
 * **Anti join (NOT IN)** → alternative to **SET EXCEPT**
+* A semi/anti join is just an IN / NOT IN operation where the right-hand side is a subquery (dynamic list) instead of a hard-coded list of value
 * **Exists / Not Exists** → often more efficient for large tables than IN / NOT IN, especially with NULLs
 * Difference: SET operations check conditions on **all attributes**, whereas semi/anti joins allow **filtering on limited columns**, making them more flexible.
 * **Multiple columns in IN/NOT IN require parentheses**: `(col1, col2)`
