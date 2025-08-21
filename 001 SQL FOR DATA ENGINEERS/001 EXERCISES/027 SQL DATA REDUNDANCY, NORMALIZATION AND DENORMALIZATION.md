@@ -107,7 +107,23 @@ CREATE TABLE normalized_ratings (
     FOREIGN KEY (movie_id) REFERENCES normalized_movies(movie_id)
 );
 ```
+### 3. Create table professor with columns firstname, lastname (both data type as string)
 
+```sql
+CREATE TABLE professor(
+firstname text,
+lastname text
+);
+```
+### 4. Create a table universities with three text columns: university_shortname, university, and university_city.
+```sql
+CREATE TABLE universities
+(
+ university_shortname text,
+ university text,
+ university_city text
+);
+```
 ---
 
 ## 🧠PRACTICE
