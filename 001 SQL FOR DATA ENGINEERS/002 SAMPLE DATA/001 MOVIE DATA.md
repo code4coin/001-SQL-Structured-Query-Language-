@@ -6,8 +6,8 @@ Therefore, access the given platform and execute sql queries from the section "S
 
 ## PLATFORM
 We will utilize Programiz online SQL Complier website to create these tables 
-Practice SQL commands online using (for MYSQL database): [Programiz SQL Online Compiler](https://www.programiz.com/sql/online-compiler)
-Practice SQL commands online using (for PostgreSQL database) [Aiven pg compiler ] (https://aiven.io/tools/pg-playground?utm_source=chatgpt.com)
+- Practice SQL commands online using **(for MYSQL database)**: [Programiz SQL Online Compiler](https://www.programiz.com/sql/online-compiler)
+- Practice SQL commands online using **(for PostgreSQL database)** [Aiven pg compiler ] (https://aiven.io/tools/pg-playground?utm_source=chatgpt.com)
 
 
 ---
