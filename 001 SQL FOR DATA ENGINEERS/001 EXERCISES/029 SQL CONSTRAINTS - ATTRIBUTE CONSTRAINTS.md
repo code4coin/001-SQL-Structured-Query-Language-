@@ -105,7 +105,6 @@ GROUP BY genre;
 
 ---
 ## ✅SOLUTIONS
-### Practise
 1. Insert a valid new movie with `movie_id=21`, title `"Oppenheimer"`, genre `"Drama"`, director_id `1`, release_year `2023`, country `"USA"`, runtime `180`.  
 ```sql
 INSERT INTO movies (movie_id, title, genre, director_id, release_year, country, runtime_minutes)
