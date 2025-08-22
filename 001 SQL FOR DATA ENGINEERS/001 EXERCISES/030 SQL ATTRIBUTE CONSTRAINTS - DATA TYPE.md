@@ -7,14 +7,14 @@
 - **BOOLEAN**
 - **NUMERIC**
 - **DATE**
-- **ALTER TABLE ... TYPE**
+- **ALTER TABLE ... TYPE ... USING**
 - **USING clause**
 - **DOMAIN**
 ---
 ## 📖DEFINITION
 - **Data Types** – Define the kind of values a column can store (text, number, date, etc.), enforce consistency, and ensure meaningful operations on data.
 - **DOMAIN** – the set of permissible values determined by the data type.
-- **ALTER TABLE … TYPE** – command used to change a column’s data type after table creation.
+- **ALTER TABLE … TYPE ... USING** – command used to change a column’s data type after table creation.
 - **USING clause** – optional clause in ALTER TABLE that tells PostgreSQL how to convert old values into the new type.
 ---
 ## 🧱QUERY FORMAT
