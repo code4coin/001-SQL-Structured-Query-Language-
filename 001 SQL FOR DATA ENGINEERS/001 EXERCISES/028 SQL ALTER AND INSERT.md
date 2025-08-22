@@ -7,6 +7,7 @@
 - **ALTER TABLE … DROP COLUMN**
 - **DATA MIGRATION**   
 - **INSERT INTO … SELECT DISTINCT**
+- **DROP TABLE**
 
 
 ---
@@ -17,7 +18,8 @@
 - **ALTER TABLE … RENAME COLUMN**  - renaming existing column
 - **ALTER TABLE … DROP COLUMN** - deleting column fromt the table
 - **DATA MIGRATION** - coping data from one source to another; for this session, it consist of moving data from one table to another using INSERT & SELECT combination
-- **INSERT INTO SELECT DISTINCT** – Copies data from one table into another while avoiding duplicate rows.  
+- **INSERT INTO SELECT DISTINCT** – Copies data from one table into another while avoiding duplicate rows.
+- **DROP TABLE** - At times, we create temporary tables to store intermediate data in the database. Once these tables have served their purpose, it is good practice to delete them to prevent unnecessary resource usage and keep the database clean.
 
 ---
 ## 🧱QUERY FORMAT
@@ -42,6 +44,10 @@ ADD COLUMN column_name datatype;
 INSERT INTO target_table (col1, col2, ...)
 SELECT DISTINCT col1, col2, ...
 FROM source_table;
+```
+```sql
+-- Deleting database table
+DROP TABLE table_name;
 ```
 
 ---
