@@ -86,6 +86,11 @@ INSERT INTO directors (director_id, director_name, country_origin)
 SELECT DISTINCT director_id, director_name, country_origin
 FROM movies_temp;
 ```
+### 5. Drop a table
+Suppose we no longer need the table  **movies** in the database.  
+```sql
+DROP TABLE movies;
+```
 ---
 ## 🧠Practise
 1. Add a new column `box_office_million_usd` to the **movies** table.  
