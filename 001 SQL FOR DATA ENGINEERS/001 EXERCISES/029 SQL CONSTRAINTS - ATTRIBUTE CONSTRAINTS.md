@@ -6,11 +6,13 @@
 - **Data Quality**
 - **Integrity**
 - **Validation**
+- **Type Casting**
 ---
 ## 📖DEFINITION
 - **Attribute Constraints** – Rules applied at the column level to ensure valid data entry.  
-- **Data Types** – Define what kind of values can be stored in a column (e.g., `INT`, `VARCHAR`, `DATE`, `FLOAT`).  
-- **Purpose** – Improve **data quality**, maintain **consistency**, and prevent **invalid inputs**.  
+- **Data Types** – Define what kind of values can be stored in a column (e.g., `INT`, `VARCHAR`, `DATE`, `FLOAT`).
+- **Type Casting** – Converting a value from one data type to another for consistency or calculations.  
+- **Purpose** – Improve **data quality**, maintain **consistency**, and prevent **invalid inputs**.   
 ---
 ## 🧱QUERY FORMAT
 ```sql
@@ -28,13 +30,25 @@ CREATE TABLE movies (
     runtime_minutes INT CHECK (runtime_minutes > 0)
 );
 ```
+```sql
+-- Example of type casting
+-- Type Casting Examples
+SELECT release_year::VARCHAR AS year_text
+FROM movies;
+
+-- Another format
+-- Type Casting Examples
+SELECT CAST(release_year AS VARCHAR) AS year_text
+FROM movies;
+```
 ---
 ## 💡TIP TO REMEMBER
 - **Always choose the right data type**:  
   - Use `INT` for whole numbers (e.g., release year).  
   - Use `VARCHAR(n)` for variable-length text (e.g., movie title).  
   - Use `DATE` for proper date values (e.g., review_date).  
-- **Constraints prevent bad data before it even enters the database.**  
+- **Constraints prevent bad data before it even enters the database.**
+- Use type casting when combining, formatting, or converting data for queries.
 ---
 ## 💪EXERCISE
 Before moving to the exercises, we need a platform with tables and data.  
@@ -77,6 +91,22 @@ VALUES (17, 1, 'user7', 15, '2024-05-01');
 -- ❌ Fails because 15 > 10
 ```
 
+### 4. Type cast release_year to varchar
+Convert release_year to text (VARCHAR) in a query.
+✅ **Solution:**
+```sql
+SELECT title, release_year::VARCHAR AS year_text
+FROM movies;
+```
+
+---
+### 5. Type cast rating to integer
+Round ratings to nearest integer using type casting.
+✅ **Solution:**
+```sql
+SELECT user_name, rating::INT AS rating_int
+FROM movie_ratings;
+```
 ---
 
 ### 4. Find the average runtime of Sci-Fi movies
