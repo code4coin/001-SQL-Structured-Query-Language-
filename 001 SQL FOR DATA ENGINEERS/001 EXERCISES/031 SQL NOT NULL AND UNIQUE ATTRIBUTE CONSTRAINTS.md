@@ -19,38 +19,44 @@
 ### NOT NULL
 ```sql
 -- Add NOT NULL during table creation
-CREATE TABLE movies (
-    movie_id INT PRIMARY KEY,
-    title VARCHAR(100) NOT NULL
+CREATE TABLE table_name (
+    column_name data_type PRIMARY KEY,
+    column_name data_type **NOT NULL**
 );
 ```
 ```sql
--- Add NOT NULL later
-ALTER TABLE movies
-ALTER COLUMN title SET NOT NULL;
+-- Add NOT NULL to an existing column (ensure no NULLs first)
+ALTER TABLE table_name
+ALTER COLUMN column_name SET NOT NULL;
 ```
 ```sql
 -- Remove NOT NULL
-ALTER TABLE movies
-ALTER COLUMN title DROP NOT NULL;
+ALTER TABLE table_name
+ALTER COLUMN column_name DROP NOT NULL;
 ```
 
 ### UNIQUE
 ```sql
 -- Add UNIQUE during table creation
-CREATE TABLE actors (
-    actor_id INT PRIMARY KEY,
-    actor_name VARCHAR(100) UNIQUE
+CREATE TABLE table_name (
+    column_name data_type PRIMARY KEY,
+    column_name data_type **UNIQUE**
 );
 ```
 ```sql
--- Add UNIQUE to an existing table
-ALTER TABLE directors
-ADD CONSTRAINT unique_director_name UNIQUE (director_name);
+-- Add UNIQUE to an existing column (ensure no duplicates first)
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_name UNIQUE (column_name);
+```
+```sql
+-- Drop UNIQUE
+ALTER TABLE table_name
+DROP CONSTRAINT constraint_name;
 ```
 
 ---
 ## 💡TIP TO REMEMBER
+- **“NN-U” – Not Null first, then Unique.** Always check for existing NULLs or duplicates before adding either constraint.
 - **NOT NULL** = Value must always exist.  
 - **UNIQUE** = No two rows can have the same value.  
 - Together, **NOT NULL + UNIQUE** behaves like a primary key (but without being the official key).  
