@@ -6,7 +6,7 @@
 
 ---
 
-<h1 align="center">SQL: SELECT AND FROM</h1>
+<h1 align="center">SQL - SELECT & FROM</h1>
 
 ---
 ## 🔑KEYWORDS
