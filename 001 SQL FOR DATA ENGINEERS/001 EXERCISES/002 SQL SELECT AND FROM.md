@@ -1,4 +1,7 @@
-# SQL - SELECT AND FROM
+![My Logo](<img width="1024" height="1024" alt="Logo Code 4 Coin" src="https://github.com/user-attachments/assets/f88fc42b-e1c6-4d66-b50e-60360c4a603e" />
+)
+
+# SELECT AND FROM
 ---
 ## 🔑KEYWORDS
 > <b> SELECT
@@ -17,6 +20,9 @@
 ## 🧱QUERY FORMAT
 > <b>SQL QUERY: TO RETRIEVE DATA FROM A DATABASE TABLE
 ```sql
+-- 📝 Remember: ORDER OF EXECUTION
+-- 1. FROM: will retrieve table store in database
+-- 2. SELECT: final output processed column, shown in resultset
 SELECT column_names
 FROM table_name;
 ```
@@ -26,8 +32,8 @@ FROM table_name;
 ```sql 
 FROM → SELECT
 ```
-- <b>FROM *executes first*</b>: SQL looks at which table to query.
-- <b>SELECT *executes second*</b>: SQL picks the columns to return.
+- <b><i>FROM executes first</i></b>: SQL looks at which table to query.
+- <b><i>SELECT executes second</i></b>: SQL picks the columns to return.
 
 ---
 ## 💪EXERCISE
@@ -36,35 +42,55 @@ For this, we have a setup file available inside the same directory: [CLICK AND E
 
 ---
 ### 1. Retrieving 1 field from patrons table
-✅ Solution:
+<details>
+  <summary>✅ Solution:</summary>
+
 ```sql
 SELECT name
 FROM patrons;
 ```
+</details>
+
 ### 2. Retrieving 2 fields from patrons table
-✅ Solution:
+<details>
+  <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT card_id, name
 FROM patrons;
 ```
+</details>
+
 ### 3. Retrieving 3 fields from patrons table
-✅ Solution:
+<details>
+  <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT card_id, name, join_year
 FROM patrons;
 ```
+</details>
+
 ### 4. Retrieving multiple fields from patrons table
-✅ Solution:
+<details>
+  <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT card_id, name, join_year, fines
 FROM patrons;
 ```
+</details>
+
 ### 5. Retrieving ALL fields from patrons table
-✅ Solution:
+<details>
+  <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT *
 FROM patrons;
 ```
+</details>
+
 ---
 ## 🧠PRACTISE
 1. Write a query to retrieve field `book_title` from `checkouts` table
