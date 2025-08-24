@@ -11,21 +11,21 @@
 
 ---
 ## 🔑KEYWORDS
-> <b> SELECT
+> **SELECT**
 
-> <b>FROM
+> **FROM**
 ---
 ## 📖DEFINITION
-> <b> SELECT
+> **SELECT**
   - Choose columns or expressions to return.
   - Can include calculations, functions, aliases, and subqueries.
-> <b> FROM
+> **FROM**
   - Specifies the table(s) to query.
   - Can reference multiple tables with JOINs.
 ---
 
 ## 🧱QUERY FORMAT
-> <b>SQL QUERY STRUCTURE:
+> **SQL QUERY STRUCTURE:**
 ```sql
 -- 📝 Remember: ORDER OF EXECUTION
 -- 1. FROM: specifies the table from which data will be retrieved
@@ -35,20 +35,29 @@ SELECT
   column_names
 FROM table_name;
 ```
-> <b>SQL QUERY EXAMPLE:
+> **SQL QUERY EXAMPLE:**
+
+❓**Problem Statement**: From a people table, retrieve all names stored inside.
 ```sql
--- PROBLEM STATEMENT: From a people table, retrieve all names stored inside.
 SELECT
   name
 FROM people;
 ```
-> <b>TRY YOURSELF: [CLICK TO EXECUTE QUERIES](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)
+> **SQL QUERY TEST:**
 
-> <b>SQL QUERY TEST:
+❓**Problem Statement**: Retrieve names and emails from people table
+<details>
+  <summary>✅ Solution:</summary>
+  
 ```sql
--- PROBLEM STATEMENT: Retrieve names and email from people table
+SELECT
+  name,
+  email
+FROM people;
 ```
+</details>
 
+> **TRY YOURSELF: [CLICK TO EXECUTE QUERIES](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)**
 ---
 ## 💡TIP TO REMEMBER
 > <b>ORDER OF EXECUTION:
