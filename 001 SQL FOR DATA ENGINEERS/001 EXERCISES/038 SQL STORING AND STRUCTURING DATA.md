@@ -169,45 +169,54 @@ GROUP BY genre;
 -- 1. List all movies released after 2010
 SELECT * FROM movies
 WHERE release_year > 2010;
-
+```
+```sql
 -- 2. Count the total number of movies per genre
 SELECT genre, COUNT(*) AS total_movies
 FROM movies
 GROUP BY genre;
-
+```
+```sql
 -- 3. Find movies with rating above 8.5
 SELECT title, rating
 FROM movies
 WHERE rating > 8.5;
-
+```
+```sql
 -- 4. Insert a new movie record into the table
 INSERT INTO movies (title, genre, release_year, rating)
 VALUES ('New Movie', 'Action', 2025, 7.8);
-
+```
+```sql
 -- 5. Update the rating of a specific movie
 UPDATE movies
 SET rating = 9.0
 WHERE title = 'Inception';
-
+```
+```sql
 -- 6. Delete movies released before 2000
 DELETE FROM movies
 WHERE release_year < 2000;
-
+```
+```sql
 -- 7. List top 5 highest-rated movies
 SELECT * FROM movies
 ORDER BY rating DESC
 LIMIT 5;
-
+```
+```sql
 -- 8. Find all movies in the 'Action' genre released after 2015
 SELECT * FROM movies
 WHERE genre = 'Action' AND release_year > 2015;
-
+```
+```sql
 -- 9. Count movies per year and order descending
 SELECT release_year, COUNT(*) AS total_movies
 FROM movies
 GROUP BY release_year
 ORDER BY total_movies DESC;
-
+```
+```sql
 -- 10. Find average rating per genre
 SELECT genre, AVG(rating) AS avg_rating
 FROM movies
