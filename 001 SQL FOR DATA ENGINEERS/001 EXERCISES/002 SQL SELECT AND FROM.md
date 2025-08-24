@@ -1,11 +1,12 @@
+<!-- 
 ---
+
 <p align="center">
   <img src="https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/000%20DOCUMENTS/GITHUB%20BANNER%20LOGO.png" 
        alt="Banner Logo" style="max-width:100%; height:auto;">
 </p>
-
+-->
 ---
-
 <h1 align="center">SQL - SELECT & FROM</h1>
 
 ---
