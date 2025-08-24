@@ -25,14 +25,30 @@
 ---
 
 ## 🧱QUERY FORMAT
-> <b>SQL QUERY: TO RETRIEVE DATA FROM A DATABASE TABLE
+> <b>SQL QUERY STRUCTURE:
 ```sql
 -- 📝 Remember: ORDER OF EXECUTION
--- 1. FROM: will retrieve table store in database
--- 2. SELECT: final output processed column, shown in resultset
-SELECT column_names
+-- 1. FROM: specifies the table from which data will be retrieved
+-- 2. SELECT: defines the columns to be displayed in the final result
+
+SELECT
+  column_names
 FROM table_name;
 ```
+> <b>SQL QUERY EXAMPLE:
+```sql
+-- PROBLEM STATEMENT: From a people table, retrieve all names stored inside.
+SELECT
+  name
+FROM people;
+```
+> <b>TRY YOURSELF: [CLICK TO EXECUTE QUERIES](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)
+
+> <b>SQL QUERY TEST:
+```sql
+-- PROBLEM STATEMENT: Retrieve names and email from people table
+```
+
 ---
 ## 💡TIP TO REMEMBER
 > <b>ORDER OF EXECUTION:
