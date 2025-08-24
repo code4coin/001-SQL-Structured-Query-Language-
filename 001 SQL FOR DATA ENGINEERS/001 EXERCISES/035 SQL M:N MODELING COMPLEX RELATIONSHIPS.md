@@ -4,11 +4,11 @@
 
 ## 🔑KEYWORDS
 
-* **1\:N Relationship** – One-to-Many relationship (e.g., Directors → Movies)
-* **N\:M Relationship** – Many-to-Many relationship (e.g., Movies ↔ Actors)
-* **Linking Table** – Table used to implement N\:M relationships (e.g., `movie_actors`)
-* **Foreign Key** – Column referencing another table's primary key
-* **Aggregation** – Using SQL functions like AVG(), COUNT() to summarize data
+* **1\:N Relationship** 
+* **N\:M Relationship** 
+* **Linking Table** 
+* **Foreign Key**
+* **Aggregation** 
 
 ---
 
