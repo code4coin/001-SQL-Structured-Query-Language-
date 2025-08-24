@@ -35,13 +35,13 @@ Before moving to the exercises, we need a platform with tables and data.
 For this, we have a setup file available inside the same directory: [CLICK AND EXECUTE FILE FIRST](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)
 
 ---
-> <b>### 1. Retrieving 1 field from patrons table
+### 1. Retrieving 1 field from patrons table
 ✅ Solution:
 ```sql
 SELECT name
 FROM patrons;
 ```
-> <b>### 2. Retrieving 2 fields from patrons table
+### 2. Retrieving 2 fields from patrons table
 ✅ Solution:
 ```sql
 SELECT card_id, name
@@ -66,7 +66,7 @@ SELECT *
 FROM patrons;
 ```
 ---
-## 🧠Practise
+## 🧠PRACTISE
 1. Write a query to retrieve field `book_title` from `checkouts` table
 2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
 ---
