@@ -48,7 +48,7 @@ Before moving to the exercises, we need a platform with tables and data.
 For this, we have a setup file available inside the same directory: [CLICK AND EXECUTE FILE FIRST](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)
 
 ---
-### 1. Retrieving 1 field from patrons table
+1. Retrieving 1 field from patrons table
 <details>
   <summary>✅ Solution:</summary>
 
@@ -58,7 +58,7 @@ FROM patrons;
 ```
 </details>
 
-### 2. Retrieving 2 fields from patrons table
+2. Retrieving 2 fields from patrons table
 <details>
   <summary>✅ Solution:</summary>
   
@@ -68,7 +68,7 @@ FROM patrons;
 ```
 </details>
 
-### 3. Retrieving 3 fields from patrons table
+3. Retrieving 3 fields from patrons table
 <details>
   <summary>✅ Solution:</summary>
   
@@ -78,7 +78,7 @@ FROM patrons;
 ```
 </details>
 
-### 4. Retrieving multiple fields from patrons table
+4. Retrieving multiple fields from patrons table
 <details>
   <summary>✅ Solution:</summary>
   
@@ -88,7 +88,7 @@ FROM patrons;
 ```
 </details>
 
-### 5. Retrieving ALL fields from patrons table
+5. Retrieving ALL fields from patrons table
 <details>
   <summary>✅ Solution:</summary>
   
@@ -104,12 +104,12 @@ FROM patrons;
 2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
 ---
 ## ✅ SOLUTIONS
-### 1. Write a query to retrieve field `book_title` from `checkouts` table
+1. Write a query to retrieve field `book_title` from `checkouts` table
 ```sql
 SELECT book_title
 FROM checkouts;
 ```
-### 2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
+2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
 ```sql
 SELECT *
 FROM checkouts;
