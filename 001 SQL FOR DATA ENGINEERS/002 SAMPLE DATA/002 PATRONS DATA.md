@@ -16,8 +16,22 @@ We will utilize Programiz online SQL Complier website to create these tables
 **SQL Foundation: Below SQL table will be used across all exercises**
 
 ```sql
--- 1. Create Checkouts Table
 DROP TABLE IF EXISTS Checkouts;
+DROP TABLE IF EXISTS Patrons;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS people;
+DROP TABLE IF EXISTS books;
+DROP TABLE IF EXISTS movies;
+
+-- 1. Create Patrons Table
+CREATE TABLE Patrons (
+    card_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    join_year INT,
+    fines DECIMAL(5,2) DEFAULT 0.00
+);
+
+-- 2. Create Checkouts Table
 CREATE TABLE Checkouts (
     checkout_id INT PRIMARY KEY,
     card_id INT,
@@ -27,17 +41,8 @@ CREATE TABLE Checkouts (
     FOREIGN KEY (card_id) REFERENCES Patrons(card_id)
 );
 
--- 2. Create Patrons Table
-DROP TABLE IF EXISTS Patrons;
-CREATE TABLE Patrons (
-    card_id INT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    join_year YEAR,
-    fines DECIMAL(5,2) DEFAULT 0.00
-);
 
 -- 3. Create employees table
-DROP TABLE IF EXISTS employees;
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY,
     dept_id INT,
@@ -47,7 +52,6 @@ CREATE TABLE employees (
 );
 
 -- 4. Create people table
-DROP TABLE IF EXISTS people;
 CREATE TABLE people (
     id INTEGER PRIMARY KEY,
     name TEXT,
@@ -56,7 +60,6 @@ CREATE TABLE people (
 );
 
 -- 5. Create books table
-DROP TABLE IF EXISTS books;
 CREATE TABLE books (
     book_id INT PRIMARY KEY,
     dept_id INT,
@@ -66,7 +69,6 @@ CREATE TABLE books (
 );
 
 -- 6. create movie table
-DROP TABLE IF EXISTS movies;
 CREATE TABLE movies (
     movie_id INT PRIMARY KEY,
     title VARCHAR(100),
