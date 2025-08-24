@@ -58,6 +58,9 @@ GROUP BY a.actor_name;
 ## 💡TIP TO REMEMBER
 
 * Always identify the **type of relationship** before designing tables.
+* Think “two 1:N relationships” to model one N:M relationship:
+  - One 1:N between left table and the bridge.
+  - One 1:N between right table and the bridge.
 * Use **foreign keys** for 1\:N relationships and **linking tables** for N\:M relationships.
 * Aggregations like AVG(), COUNT(), SUM() can help extract insights from relationships.
 * Linking tables can store **additional attributes** like roles or functions.
