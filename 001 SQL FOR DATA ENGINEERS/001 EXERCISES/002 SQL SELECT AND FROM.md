@@ -1,11 +1,3 @@
-<!-- 
----
-
-<p align="center">
-  <img src="https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/000%20DOCUMENTS/GITHUB%20BANNER%20LOGO.png" 
-       alt="Banner Logo" style="max-width:100%; height:auto;">
-</p>
--->
 ---
 <h1 align="center">SQL - SELECT & FROM</h1>
 
@@ -79,13 +71,15 @@ FROM people;
 
 ---
 ## 💡TIP TO REMEMBER
-> <b>ORDER OF EXECUTION:
+> **ORDER OF EXECUTION**
 ```sql 
 FROM → SELECT
 ```
-- <b><i>FROM executes first</i></b>: SQL looks at which table to query.
-- <b><i>SELECT executes second</i></b>: SQL picks the columns to return.
-  
+- **_FROM executes first_**: SQL looks at which table to query.
+- **_SELECT executes second_**: SQL picks the columns to return.
+
+<br>
+
 > **RETRIEVE ALL COLUMNS**
 - Replace specific column names with the wildcard (*) in a SELECT statement to fetch all columns from the table.
 ---
