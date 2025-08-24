@@ -37,7 +37,7 @@ FROM table_name;
 ```
 > **SQL QUERY EXAMPLE:**
 
-❓**Problem Statement**: From a people table, retrieve all names stored inside.
+❓**Problem Statement**: From `people` table, retrieve all `names` stored inside.
 ```sql
 SELECT
   name
@@ -45,7 +45,7 @@ FROM people;
 ```
 > **SQL QUERY TEST:**
 
-❓**Problem Statement**: Retrieve names and emails from people table
+❓**Problem Statement**: Retrieve `names` and `emails` from `people` table
 <details>
   <summary>✅ Solution:</summary>
   
