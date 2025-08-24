@@ -1,28 +1,28 @@
 # SQL - SELECT AND FROM
 ---
 ## 🔑KEYWORDS
-> **SELECT**
+> <b> SELECT
 
-> **FROM**
+> <b>FROM
 ---
 ## 📖DEFINITION
-> **SELECT**
+> <b> SELECT
   - Choose columns or expressions to return.
   - Can include calculations, functions, aliases, and subqueries.
-> **FROM**
+> <b> FROM
   - Specifies the table(s) to query.
   - Can reference multiple tables with JOINs.
 ---
 
 ## 🧱QUERY FORMAT
-> SQL QUERY: TO RETRIEVE DATA FROM A DATABASE TABLE
+> <b>SQL QUERY: TO RETRIEVE DATA FROM A DATABASE TABLE
 ```sql
-SELECT field_name
+SELECT column_names
 FROM table_name;
 ```
 ---
 ## 💡TIP TO REMEMBER
-> **ORDER OF EXECUTION:**
+> <b>ORDER OF EXECUTION:
 ```sql 
 FROM → SELECT
 ```
@@ -35,13 +35,13 @@ Before moving to the exercises, we need a platform with tables and data.
 For this, we have a setup file available inside the same directory: [CLICK AND EXECUTE FILE FIRST](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)
 
 ---
-### 1. Retrieving 1 field from patrons table
+> <b>### 1. Retrieving 1 field from patrons table
 ✅ Solution:
 ```sql
 SELECT name
 FROM patrons;
 ```
-### 2. Retrieving 2 fields from patrons table
+> <b>### 2. Retrieving 2 fields from patrons table
 ✅ Solution:
 ```sql
 SELECT card_id, name
