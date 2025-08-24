@@ -1,5 +1,8 @@
-![My Logo](<img width="1024" height="1024" alt="Logo Code 4 Coin" src="https://github.com/user-attachments/assets/f88fc42b-e1c6-4d66-b50e-60360c4a603e" />
-)
+<p align="center">
+  <img src="https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/000%20DOCUMENTS/GITHUB%20BANNER%20-%20LOGO.png?raw=true" 
+       alt="Banner Logo" style="max-width:100%; height:auto;">
+</p>
+
 
 # SELECT AND FROM
 ---
