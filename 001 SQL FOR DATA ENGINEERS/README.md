@@ -64,7 +64,30 @@ Please open a **pull request** or **issue** to contribute.
 ---
 ## **LICENSE** 📄
 
-This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
+Copyright (c) 2025 [NITIN RAWAT]
+
+This repository is free to use for **personal learning and educational purposes only**.  
+You may study, fork, and modify the code for your own understanding.  
+
+However, the following restrictions apply:
+
+1. **No Commercial Use**  
+   You are not permitted to use this code, in whole or in part, for any commercial purpose.  
+   This includes but is not limited to selling, sublicensing, incorporating into a product or service, or redistributing for profit.
+
+2. **No Redistribution / Reupload**  
+   You may not copy, reupload, or redistribute this repository (in whole or in part) under your own name or organization, whether public or private.
+
+3. **Attribution Required**  
+   If you use snippets of this code in your own **personal or educational projects**, you must give clear credit to the original source:  
+   `Source: [Your GitHub Repository URL]`
+
+4. **Derivative Works**  
+   You may modify this code for personal learning only. If you publish derivative works for educational sharing (e.g., blog posts, tutorials), you must provide attribution and a link back to this repository.
+
+By using this repository, you agree to these terms.  
+For commercial licensing inquiries, please contact [nitin.code4coin@gmail.com].
+
 
 ---
 ## **MORE RESOURCES** 🔗
