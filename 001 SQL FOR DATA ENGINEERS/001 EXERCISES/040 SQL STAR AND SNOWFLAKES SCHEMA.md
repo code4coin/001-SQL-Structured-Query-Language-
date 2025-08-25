@@ -284,11 +284,11 @@ We welcome contributions! You can:
 * Improve existing chapters or examples
 * Share interview questions or projects
 
-## Please open a **pull request** or **issue** to contribute.
+Please open a **pull request** or **issue** to contribute.
 
 ## 📄**LICENSE**
 
-## This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
+This repository is free to use for learning purposes. Please give credit if used in your projects or materials.
 
 ## 🔗**MORE RESOURCES**
 
