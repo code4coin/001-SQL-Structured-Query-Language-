@@ -155,22 +155,6 @@ SELECT *
 FROM checkouts;
 ```
 ---
-## 🤝**CONTRIBUTING** 
-
-We welcome contributions! You can:
-
-- Add new SQL exercises  
-- Improve existing chapters or examples  
-- Share interview questions or projects  
-
-Please open a **pull request** or **issue** to contribute.  
-
----
-## 📄**LICENSE** 
-
-This repository is free to use for learning purposes. Please give credit if used in your projects or materials.  
-
----
 ## 🔗**MORE RESOURCES** 
 
 Stay connected and explore more content:
