@@ -80,14 +80,13 @@ However, the following restrictions apply:
 
 3. **Attribution Required**  
    If you use snippets of this code in your own **personal or educational projects**, you must give clear credit to the original source:  
-   `Source: [Your GitHub Repository URL]`
+   `Source: [Your GitHub Repository URL](https://github.com/code4coin/001-SQL-Structured-Query-Language-)
 
 4. **Derivative Works**  
    You may modify this code for personal learning only. If you publish derivative works for educational sharing (e.g., blog posts, tutorials), you must provide attribution and a link back to this repository.
 
 By using this repository, you agree to these terms.  
 For commercial licensing inquiries, please contact [nitin.code4coin@gmail.com].
-
 
 ---
 ## **MORE RESOURCES** 🔗
