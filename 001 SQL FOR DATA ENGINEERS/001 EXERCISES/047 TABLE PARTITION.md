@@ -33,6 +33,21 @@ CREATE TABLE child_partition
     FOR VALUES FROM (...) TO (...);
 ```
 
+```sql
+-- 1. Create parent table
+CREATE TABLE <table_name> ( … ) PARTITION BY <method> (<key_column>);
+```
+```sql
+-- 2. Create individual partitions
+CREATE TABLE <child_name>
+    PARTITION OF <parent_table>
+    FOR VALUES <range_or_list_or_hash_rule>;
+```
+```sql
+-- 3. Index each partition for partition-pruning
+CREATE INDEX ON <child_name> (<key_column>);
+```
+
 ---
 ## 💡TIP TO REMEMBER
 - Use **vertical partitioning** when some columns are rarely used.  
