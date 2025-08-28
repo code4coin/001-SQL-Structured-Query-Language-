@@ -70,8 +70,6 @@ WHERE m.release_year > 2010;
 ```
 </details>
 
----
-
 ### 2. Get the top 3 highest-rated movies (average rating).
 <details>
 <summary>✅ Solution</summary>
@@ -85,8 +83,6 @@ ORDER BY avg_rating DESC
 LIMIT 3;
 ```
 </details>
-
----
 
 ### 3. Which actor has acted in the most movies?
 <details>
@@ -102,8 +98,6 @@ LIMIT 1;
 ```
 </details>
 
----
-
 ### 4. Show average rating for each movie genre.
 <details>
 <summary>✅ Solution</summary>
@@ -116,8 +110,6 @@ GROUP BY m.genre
 ORDER BY avg_rating DESC;
 ```
 </details>
-
----
 
 ## 🧠PRACTISE
 
