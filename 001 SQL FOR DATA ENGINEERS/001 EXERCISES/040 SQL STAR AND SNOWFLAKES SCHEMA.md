@@ -48,6 +48,7 @@ For this, we have a setup file available inside the same directory: [CLICK AND E
 ### Exercise 1: List all movies with their director names.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title, d.director_name
 FROM movies m
@@ -58,6 +59,7 @@ JOIN directors d ON m.director_id = d.director_id;
 ### Exercise 2: List all movies along with their average rating.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title, AVG(r.rating) AS avg_rating
 FROM movies m
@@ -69,6 +71,7 @@ GROUP BY m.title;
 ### Exercise 3: Find all actors who acted in more than 2 movies.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT a.actor_name, COUNT(ma.movie_id) AS movie_count
 FROM actors a
@@ -81,6 +84,7 @@ HAVING COUNT(ma.movie_id) > 2;
 ### Exercise 4: Get all movies released after 2010 along with director nationality.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title, d.nationality
 FROM movies m
@@ -92,6 +96,7 @@ WHERE m.release_year > 2010;
 ### Exercise 5: List the top 3 highest-rated movies.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title, AVG(r.rating) AS avg_rating
 FROM movies m
@@ -105,6 +110,7 @@ LIMIT 3;
 ### Exercise 6: Show all actors with nationality and number of movies they acted in.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT a.actor_name, a.nationality, COUNT(ma.movie_id) AS movie_count
 FROM actors a
@@ -116,6 +122,7 @@ GROUP BY a.actor_name, a.nationality;
 ### Exercise 7: Find movies with no ratings.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title
 FROM movies m
@@ -127,6 +134,7 @@ WHERE r.rating_id IS NULL;
 ### Exercise 8: Find average rating for each genre.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.genre, AVG(r.rating) AS avg_rating
 FROM movies m
@@ -138,6 +146,7 @@ GROUP BY m.genre;
 ### Exercise 9: List movies with multiple actors.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title, COUNT(ma.actor_id) AS actor_count
 FROM movies m
@@ -150,6 +159,7 @@ HAVING COUNT(ma.actor_id) > 1;
 ### Exercise 10: Find all ratings given in January 2024.
 <details>
   <summary>✅ Solution:</summary>
+  
 ```sql
 SELECT m.title, r.user_name, r.rating, r.review_date
 FROM movie_ratings r
