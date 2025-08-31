@@ -1,12 +1,16 @@
 # 📘 SQL Mastery Roadmap (Beginner → Data Pro)
 
 Welcome to the **SQL Mastery Roadmap** — a complete **21-module journey** that takes you from a complete beginner to an advanced SQL expert. 🎯  
-Each module is structured with **core concepts**, **practical tips**, and **hands-on activities** to keep it interactive and engaging.
+Each module includes **core concepts**, **code snippets**, and **hands-on challenges** to make learning interactive and practical.
 
 ---
 
 ## 🚀 Getting Started
-👉 Recommended: Install **MySQL** or **PostgreSQL** or **MS SQL SERVER** (recommended) on your system, or use free cloud sandboxes like [SQL Fiddle](http://sqlfiddle.com/) or [DB Fiddle](https://www.db-fiddle.com/).
+👉 Recommended: Install **MySQL** or **PostgreSQL** or **MS SQL SERVER (Recommended)** on your system, or use free cloud sandboxes like:
+- [SQL Fiddle](http://sqlfiddle.com/)
+- [DB Fiddle](https://www.db-fiddle.com/)
+- [Programiz SQL Online Compiler](https://www.programiz.com/sql/online-compiler)
+- [Aiven pg compiler](https://aiven.io/tools/pg-playground?utm_source=chatgpt.com) (Recommended)
 
 ---
 
@@ -15,13 +19,12 @@ Each module is structured with **core concepts**, **practical tips**, and **hand
 - 🔍 Types: RDBMS vs NoSQL
 - 💡 What is SQL?
 - ⚙️ SQL Commands: DDL, DML, DQL, DCL, TCL
-- 🖥️ Setup environment (MySQL/Postgres/SQLite)
-- ✅ First Query: 
+- 🖥️ Setup environment (MySQL/Postgres/SQLite/MS SQL SERVER)
 
+### 🔹 Example
 ```sql
-  SELECT 'Hello SQL';
+SELECT 'Hello SQL';
 ```
-
 ---
 
 ## 📍 **Module 2: Database Basics & Data Types**
@@ -32,8 +35,16 @@ Each module is structured with **core concepts**, **practical tips**, and **hand
 * 📊 CREATE/DROP Table
 * 🔄 ALTER (ADD, MODIFY, DROP columns)
 
-💡 **Try it:** Create a `users` table with `id, name, email, created_at`.
+### 🔹 Example
 
+```sql
+CREATE TABLE users (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  email VARCHAR(100),
+  created_at DATE
+);
+```
 ---
 
 ## 📍 **Module 3: Basic Queries (CRUD Operations)**
@@ -42,9 +53,15 @@ Each module is structured with **core concepts**, **practical tips**, and **hand
 * 🔍 `SELECT`
 * ✏️ `UPDATE`
 * ❌ `DELETE`
-* 🎯 Filtering with `WHERE`, `BETWEEN`, `IN`, `LIKE`, `IS NULL`
+* 🎯 Filtering with `WHERE`
 * 📑 Sorting with `ORDER BY`, `LIMIT`
 
+### 🔹 Example
+
+```sql
+INSERT INTO users VALUES (1, 'Alice', 'alice@mail.com', '2023-01-01');
+SELECT * FROM users WHERE name = 'Alice';
+```
 ---
 
 ## 📍 **Module 4: Constraints & Keys**
@@ -56,34 +73,61 @@ Each module is structured with **core concepts**, **practical tips**, and **hand
 * 📝 DEFAULT
 * ✅ CHECK
 
-💡 **Practice:** Create an `employees` table with constraints.
+### 🔹 Example
 
+```sql
+CREATE TABLE employees (
+  emp_id INT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  salary DECIMAL(10,2) CHECK (salary > 0)
+);
+```
 ---
 
 ## 📍 **Module 5: Joins & Relationships**
 
-* 🤝 Relationships: 1-1, 1-M, M-M
+* 🤝 1-1, 1-M, M-M relationships
 * 🔗 INNER / LEFT / RIGHT / FULL Joins
 * 🔄 SELF Join
 * ➕ CROSS Join
 
+### 🔹 Example
+
+```sql
+SELECT u.name, o.order_id, o.amount
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id;
+```
 ---
 
 ## 📍 **Module 6: Aggregations & Grouping**
 
-* 📊 `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
+* 📊 COUNT, SUM, AVG, MIN, MAX
 * 📦 GROUP BY
 * 🎯 HAVING
 
-💡 **Practice:** Find total sales per customer.
+### 🔹 Example
 
+```sql
+SELECT department_id, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department_id
+HAVING AVG(salary) > 50000;
+```
 ---
 
 ## 📍 **Module 7: Subqueries & Nested Queries**
 
 * 🔍 Simple Subquery
 * 🔁 Correlated Subquery
-* ⚡ `IN`, `EXISTS`, `ANY`, `ALL`
+* ⚡ IN, EXISTS, ANY, ALL
+
+### 🔹 Example
+
+```sql
+SELECT name FROM users
+WHERE id IN (SELECT user_id FROM orders);
+```
 
 ---
 
@@ -92,140 +136,142 @@ Each module is structured with **core concepts**, **practical tips**, and **hand
 * 👓 Views
 * ⚙️ Stored Procedures & Functions
 * 🔔 Triggers
-* 🔒 Transactions (`BEGIN`, `COMMIT`, `ROLLBACK`, `SAVEPOINT`)
+* 🔒 Transactions
+
+### 🔹 Example
+
+```sql
+CREATE VIEW active_users AS
+SELECT * FROM users WHERE is_active = TRUE;
+```
 
 ---
 
 ## 📍 **Module 9: Window Functions & CTEs**
 
-* 🪟 `ROW_NUMBER`, `RANK`, `DENSE_RANK`
-* ⏪ `LAG`, `LEAD`
+* 🪟 ROW\_NUMBER, RANK, DENSE\_RANK
+* ⏪ LAG, LEAD
 * 📐 PARTITION BY & ORDER BY
-* 📄 CTEs (WITH clause)
+* 📄 CTEs
 
+### 🔹 Example
+
+```sql
+SELECT name, salary,
+RANK() OVER (ORDER BY salary DESC) AS salary_rank
+FROM employees;
+```
 ---
 
 ## 📍 **Module 10: Indexing (Basics)**
 
 * 📖 What is an Index?
 * 📌 Clustered vs Non-Clustered
-* 🧩 Single-column & Composite Index
-* ✨ Unique, Partial, Covering Indexes
+* 🧩 Single-column, Composite Index
 
+### 🔹 Example
+
+```sql
+CREATE INDEX idx_users_email ON users(email);
+```
 ---
 
 ## 📍 **Module 11: Advanced Indexing & Query Optimization**
 
-* 🕵️ Using `EXPLAIN` / `EXPLAIN ANALYZE`
+* 🕵️ `EXPLAIN`
 * ⚡ Index-only scans
 * 🔍 Full-text indexes
-* 🌲 GIN, GiST, BRIN (Postgres)
-* 📊 Columnstore Indexes (SQL Server)
-* 🛠️ Query rewriting
+* 🌲 GIN, GiST, BRIN
 
+### 🔹 Example
+
+```sql
+EXPLAIN SELECT * FROM users WHERE email = 'test@mail.com';
+```
 ---
 
 ## 📍 **Module 12: Data Modeling & Normalization**
 
 * 🗺️ ER Diagrams
-* 📏 1NF → 2NF → 3NF → BCNF
-* 🔄 Denormalization (when & why)
-* 🏗️ Best Practices
-
+* 📏 1NF, 2NF, 3NF, BCNF
+* 🔄 Denormalization
 ---
 
-## 📍 **Module 13: Partitioning & Big Data Concepts**
+## 📍 **Module 13: Partitioning & Big Data**
 
-* ✂️ Table Partitioning (Range, List, Hash)
+* ✂️ Partitioning
 * 📦 Sharding
-* 🧭 Partitioned Indexes
 * ⚡ Handling large datasets
-
 ---
 
 ## 📍 **Module 14: Security & User Management**
 
-* 👤 Creating Users
-* 🔑 Permissions: GRANT & REVOKE
-* 🛡️ Roles & Privileges
-* 🚨 Preventing SQL Injection
-
+* 👤 Users
+* 🔑 Permissions
+* 🛡️ SQL Injection Prevention
 ---
 
-## 📍 **Module 15: Real-World SQL (Production-Focused)**
+## 📍 **Module 15: Real-World SQL**
 
 * 🚫 NULL handling
 * ⚡ Efficient queries
-* 🗃️ Caching strategies
+* 🗃️ Caching
 * 📦 JSON & Arrays
-* 🔄 ETL basics
-
 ---
 
 ## 📍 **Module 16: Advanced Query Techniques**
 
 * 🔁 Recursive CTEs
-* 🌳 Hierarchical Queries
+* 🌳 Hierarchies
 * 🔄 PIVOT & UNPIVOT
-* ⚙️ Dynamic SQL
-
 ---
 
 ## 📍 **Module 17: Temporal & Analytical SQL**
 
 * 📅 Dates & Times
-* 🧮 DATEDIFF, DATEADD, EXTRACT
 * 📈 Time-series queries
-* 🪟 NTILE, PERCENT\_RANK, CUME\_DIST
-
+* 🪟 NTILE, PERCENT\_RANK
 ---
 
 ## 📍 **Module 18: SQL for Data Science & BI**
 
-* 📊 Cohort analysis
-* 🔄 Funnel analysis
-* 📈 Reporting queries
-* 📊 Dashboards powered by SQL
-
+* 📊 Cohorts
+* 🔄 Funnels
+* 📈 Reporting
 ---
 
 ## 📍 **Module 19: Concurrency & Transactions Deep Dive**
 
-* 🔒 ACID Properties
+* 🔒 ACID
 * 🧩 Isolation Levels
-* 🔄 Deadlocks & Handling
-* 🗂️ Locking (Row, Table, MVCC)
-
+* 🔄 Deadlocks
 ---
 
 ## 📍 **Module 20: SQL in the Cloud & Modern Databases**
 
-* ☁️ AWS RDS, GCP Cloud SQL, Azure SQL DB
+* ☁️ AWS RDS, GCP SQL, Azure DB
 * ⚖️ OLTP vs OLAP
-* 🏢 Data Warehouses (Snowflake, BigQuery, Redshift)
-* 🧱 Columnar Storage
-* 🌐 Federated Queries
-
+* 🏢 Data Warehouses
 ---
 
 ## 📍 **Module 21: Case Studies & Capstone Project**
 
 ### Case Studies:
 
-* 🛒 E-commerce (users, orders, payments)
-* 💬 Social Media (posts, comments, likes)
-* 💳 Banking (transactions, fraud detection)
-* 🏥 Healthcare (patients, prescriptions)
-* 🚚 Logistics (shipments, inventory)
+* 🛒 E-commerce
+* 💬 Social Media
+* 💳 Banking
+* 🏥 Healthcare
+* 🚚 Logistics
 
 ### Capstone Project:
 
-* 🏗️ Design a schema
-* ✍️ Write 20+ complex queries
-* ⚡ Optimize with indexes/partitions
-* 📑 Deliver an analytics report
+* 🏗️ Design schema
+* ✍️ Write 20+ queries
+* ⚡ Optimize with indexes
+* 📑 Deliver final analytics report
 
 ---
 
-✅ This **21-module interactive roadmap** ensures you progress step by step, from beginner basics to expert-level SQL mastery, with **hands-on practice at every stage**.
+✅ This **21-module roadmap** is now a complete **interactive workbook** — theory + examples + practice challenges to ensure mastery.
 
