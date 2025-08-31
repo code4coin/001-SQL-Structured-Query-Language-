@@ -86,6 +86,7 @@ However, the following restrictions apply:
 
 By using this repository, you agree to these terms.  
 For commercial licensing inquiries, please contact [nitin.code4coin@gmail.com].
+
 ---
 ## **MORE RESOURCES** 🔗
 
