@@ -1,3 +1,9 @@
+<p align="center">
+<a href="./CHAPTER%2002%20-%20USING%20SPREADSHEET.md">⬅️ CHAPTER 02 - USING SPREADSHEET</a>
+&nbsp;&nbsp;&nbsp;|
+</p>
+
+---
 <h1 align="center">CHAPTER 03 - 🗄️ DISCOVER DATABASE</h1>
 
 ---
@@ -100,15 +106,6 @@ Here, a **database** is the better solution:
 
 > 💡 **Key takeaway:**  
 Databases scale far beyond spreadsheets, reduce errors, and allow **powerful querying and analysis** on large datasets.
-
----
-
-## 📎 NEXT CHAPTER
-
-[Go to Chapter 02 - Using Spreadsheet](./CHAPTER_02_USING_SPREADSHEET.md)
-
-
-➡️ [Go to Chapter 4 – Advanced SQL & Queries 💻](chapter-04-advanced-sql.md)
 
 ---
 
