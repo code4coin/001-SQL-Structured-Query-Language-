@@ -12,7 +12,13 @@ Each module includes **core concepts**, **code snippets**, and **hands-on challe
 - [DB Fiddle](https://www.db-fiddle.com/)
 - [Programiz SQL Online Compiler](https://www.programiz.com/sql/online-compiler)
 - [Aiven pg compiler](https://aiven.io/tools/pg-playground?utm_source=chatgpt.com) (Recommended)
+---
 
+## 📚 How to Use
+1. Start with the free ebook for theory.
+2. Download Carousels (Link provided in the ebook) for topic reference
+3. Practice with datasets here.
+4. Watch the YouTube walkthroughs.
 ---
 
 ## 📍 **Module 1: EVOLUTION OF DATA STORAGE**
@@ -21,4 +27,8 @@ Each module includes **core concepts**, **code snippets**, and **hands-on challe
 - 🗄️ Discovering Database
 ---
 
-
+## 🔗 Resources & Links
+- 📕 [Download Ebook](https://code4coin.gumroad.com/)
+- 🎥 [YouTube](https://www.youtube.com/@code4coin)
+- 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
+- 📸 [Instagram](https://www.instagram.com/code4coin/)
