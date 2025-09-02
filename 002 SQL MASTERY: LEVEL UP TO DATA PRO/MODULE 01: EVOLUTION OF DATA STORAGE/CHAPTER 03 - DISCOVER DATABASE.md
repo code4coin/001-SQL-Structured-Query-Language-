@@ -47,10 +47,12 @@ Here, a **database** is the better solution:
 
 ## 💪 MINI EXERCISES
 > DATA SOURCE
-- [employee_data.csv](./DATASETS/employee_data.csv)
+- [employee_data.csv](./DATASETS/employee_table.sql)
 
 > METADATA
-- employee_data is a CSV file  
+- employee table created in database (same as spreadsheet)
+- INSERT query putting employee data in employee table in database
+- INSERT is same as copying data manually from paper to spreadsheet
 - each row represents an individual employee  
 - columns: EmployeeID, Name, Department, Salary  
 
