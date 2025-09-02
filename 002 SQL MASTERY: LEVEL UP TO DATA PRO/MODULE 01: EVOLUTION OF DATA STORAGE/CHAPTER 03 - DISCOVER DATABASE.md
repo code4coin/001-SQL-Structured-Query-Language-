@@ -47,7 +47,7 @@ Here, a **database** is the better solution:
 
 ## 💪 MINI EXERCISES
 > DATA SOURCE
-- [employee_data.csv](./DATASETS/employee_table.sql)
+- [employee_data_table.sql](./DATASETS/employee_data_table.sql)
 
 > METADATA
 - employee table created in database (same as spreadsheet)
