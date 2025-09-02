@@ -84,7 +84,7 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
   *(Hint: Use AVERAGE function on the Salary column - =AVERAGE(D:D))*
 </details>
 
-3. Get me average salary for every department 
+4. Get me average salary for every department 
 <details>
   <summary>✅ Solution:</summary>
   
