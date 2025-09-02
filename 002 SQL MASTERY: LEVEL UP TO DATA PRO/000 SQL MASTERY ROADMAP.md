@@ -21,7 +21,7 @@ Each module includes **core concepts**, **code snippets**, and **hands-on challe
 4. Watch the YouTube walkthroughs.
 ---
 
-## 📍 **Module 1: EVOLUTION OF DATA STORAGE**
+## 📍 **Module 01: EVOLUTION OF DATA STORAGE**
 - 📜 Write on Paper
 - 📊 Using Spreadsheet
 - 🗄️ Discovering Database
