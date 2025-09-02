@@ -37,11 +37,45 @@ Your manager asks you to record details of **1000 employees** manually on paper.
 ---
 
 ## 💪 MINI EXERCISES
-1. List 5 attributes you would record for employees on paper.  
-2. How long would it take to find one employee if you had **500 records**?  
-3. Estimate the difficulty in calculating **total salaries** for 1000 employees manually.
+> DATA SOURCE
+- [employee_data.txt](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY%3A%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2001%3A%20EVOLUTION%20OF%20DATA%20STORAGE/DATASETS/employee_data.txt)
+
+> METADATA
+
+- employee_data is a text file
+- each row represent individual employee in the organization
+- each row consist of employee information such as employee id, name, department, salary
+
+> Now I need your help with following tasks, please
+1. What is the employee id of **Robert Miller** from *HR* Department
+<details>
+  <summary>✅ Solution:</summary>
+  
+  **EmployeeID: 4014**
+</details>
+
+2. I need total number of employees in *Finance* Department
+<details>
+  <summary>✅ Solution:</summary>
+  
+  **Employees in Finance Department: 1710**
+</details>
+
+3. Find me average salary of our employee
+<details>
+  <summary>✅ Solution:</summary>
+  
+  **Employees Average Salary: 90170.3244**
+</details>
 
 ---
+## 🔍 Observations from the MINI EXERCISES
+
+> **Searching for a single record:** Looking up one record is manageable, but doing it regularly in a large dataset quickly becomes tedious. It highlights the limits of manual searching.
+
+> **Counting employees in a department:** Counting, for example, employees in Finance may seem simple, but a single error can force you to start over. This shows how easy it is to make mistakes with manual tallying.
+
+> **Summing large numbers:** Adding thousands of salaries by hand is impractical—your calculator might not survive! This underscores the need for automated tools to handle computations reliably.
 
 ## 📎 NEXT CHAPTER
 ➡️ [Go to Chapter 2 – Spreadsheets 📊](chapter-02-spreadsheet.md)
