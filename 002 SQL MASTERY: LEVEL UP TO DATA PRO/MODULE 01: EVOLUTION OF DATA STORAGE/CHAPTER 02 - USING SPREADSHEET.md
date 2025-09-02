@@ -20,8 +20,11 @@
 
 ## 🧱 STORY FORMAT
 
-> **Scenario:**  
-Your manager now asks you to record details of **10,000 employees** digitally in a spreadsheet.  
+> **Scenario:**
+From CHAPTER 01 - WRITE ON PAPER, we observe utilizing paper and pen, to answer our manager's question will take eternity.
+So, need to find a better way of storing data that help us to complete MINI EXERCISES faster.
+And **SPREADSHEET** is our answer, therefore we move record details of **10,000 employees** digitally in a spreadsheet.  
+- Firstly, copy entire data from text file to a csv (one of many variant of spreadsheet)
 - You import the data from **employee_data.csv**.  
 - Finding a single employee or counting department-wise employees is **instant**.  
 - Calculating total salaries, averages, or department stats is **simple with formulas**.  
