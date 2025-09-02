@@ -94,18 +94,44 @@ Here, a **database** is the better solution:
   **Employees Average Salary:** 90170.32
 </details>
 
+4. Get me average salary for every department 
+<details>
+  <summary>✅ Solution:</summary>
+
+  ```sql
+SELECT department AS Department, AVG(salary) AS "Average Salary"
+  FROM employee
+ GROUP BY department;
+```
+
+**Departmental Average Salary:**  
+
+| Department  | Average Salary    |
+|------------|-----------------|
+| Finance    | 90199.59        |
+| HR         | 88685.41        |
+| IT         | 89627.00        |
+| Marketing  | 91380.42        |
+| Operations | 89799.00        |
+| Sales      | 91284.20        |
+
+  </details>
+  
 ---
 
 ## 🔍 Observations from the MINI EXERCISES
 
-> 📌 **Searching for a single record:** Queries allow instant retrieval, no manual scanning required.  
+> 📌 **Searching for a single record:** SQL queries allow instant retrieval with conditions (e.g., `WHERE Name = 'Robert Miller' AND Department = 'HR'`), no manual scanning or helper columns required.  
 
-> 📌 **Counting employees in a department:** `COUNT` ensures **accurate and fast** results.  
+> 📌 **Counting employees in a department:** Using `COUNT(*)` with a `WHERE` clause gives accurate counts automatically, regardless of dataset size.  
 
-> 📌 **Calculating averages and totals:** SQL aggregate functions like `AVG` and `SUM` handle large numbers reliably.  
+> 📌 **Calculating averages and totals:** Aggregate functions like `AVG(Salary)` or `SUM(Salary)` can compute results for the entire table or grouped by department efficiently.  
+
+> 📌 **Average salary for each department:** A single query with `GROUP BY Department` returns the average salary for every department at once, eliminating tedious manual steps required in spreadsheets.  
 
 > 💡 **Key takeaway:**  
-Databases scale far beyond spreadsheets, reduce errors, and allow **powerful querying and analysis** on large datasets.
+- What’s hard on paper becomes easier in spreadsheets, but SQL makes it faster, simpler, and almost like reading English.
+- Databases and SQL scale effortlessly with dataset size, reduce errors, and enable **powerful, repeatable, and fast analysis** that spreadsheets cannot handle efficiently for large or complex data.
 
 ---
 
