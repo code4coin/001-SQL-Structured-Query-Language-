@@ -39,7 +39,7 @@ Your manager now asks you to record details of **10,000 employees** digitally in
 
 ## 💪 MINI EXERCISES
 > DATA SOURCE
-- [employee_data.csv](./DATASET/employee_data.csv)
+- [employee_data.csv](./DATASETS/employee_data.csv)
 
 > METADATA
 - employee_data is a CSV file  
