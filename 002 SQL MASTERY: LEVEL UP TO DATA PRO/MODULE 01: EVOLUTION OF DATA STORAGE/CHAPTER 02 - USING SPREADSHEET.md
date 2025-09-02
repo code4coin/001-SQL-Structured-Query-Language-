@@ -84,6 +84,30 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
   *(Hint: Use AVERAGE function on the Salary column - =AVERAGE(D:D))*
 </details>
 
+3. Get me average salary for every department 
+<details>
+  <summary>✅ Solution:</summary>
+  
+| Department  | Average Salary    |
+|------------|-----------------|
+| Finance    | 90199.59        |
+| HR         | 88685.41        |
+| IT         | 89627.00        |
+| Marketing  | 91380.42        |
+| Operations | 89799.00        |
+| Sales      | 91284.20        |
+
+*(Hint: Use the AVERAGE function on the Salary column – =AVERAGEIFS(D:D, C:C, "Finance"))*
+
+To find the average salary for each department, you would have to:
+1. Manually list all departments.
+2. Replace "Finance" in the formula with each department name.
+3. Repeat the calculation for every department.
+4. If your organization has many departments, this becomes slow, repetitive, and error-prone.
+
+💡 **Lesson:** Even spreadsheets start to struggle as data complexity grows, showing the need for a more powerful storage solution like a database.
+</details>
+
 ---
 
 ## 🔍 Observations from the MINI EXERCISES
@@ -92,10 +116,14 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
 
 > 📌 **Counting employees in a department:** COUNTIF ensures accurate counts without human error.  
 
-> 📌 **Summing large numbers:** SUM and AVERAGE functions make calculations **reliable and fast**.  
+> 📌 **Calculating averages and totals:** SUM and AVERAGE functions make calculations **reliable and fast**.  
+
+> 📌 **Average salary for each department:** To find averages for every department, you would need to manually list all departments and replace the department name in the formula (`=AVERAGEIFS(D:D, C:C, "Finance")`) for each one.  
+> This becomes **tedious and error-prone** when an organization has many departments.  
 
 > 💡 **Key takeaway:**  
-Spreadsheets reduce errors, save time, and make data manipulation much easier. They are the **bridge between manual records and databases**.
+Spreadsheets reduce errors, save time, and make data manipulation much easier than manual records.  
+However, as datasets and complexity grow, even spreadsheets can become cumbersome, highlighting the **need for more powerful storage solutions like databases**.
 
 
 ---
