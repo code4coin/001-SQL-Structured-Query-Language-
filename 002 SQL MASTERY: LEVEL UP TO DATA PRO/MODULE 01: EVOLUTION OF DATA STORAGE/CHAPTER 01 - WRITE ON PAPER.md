@@ -36,28 +36,10 @@ Your manager asks you to record details of **1000 employees** manually on paper.
 
 ---
 
-## 🧠 MINI EXERCISES
+## 💪 MINI EXERCISES
 1. List 5 attributes you would record for employees on paper.  
 2. How long would it take to find one employee if you had **500 records**?  
 3. Estimate the difficulty in calculating **total salaries** for 1000 employees manually.
-
----
-
-## 💪 PRACTICE EXERCISES
-> No SQL yet — just thinking exercises.
-
-1. Imagine storing student records for a school using paper.  
-   - How would you retrieve the top 3 students with highest scores?  
-
-2. List 3 **drawbacks of using paper** for growing datasets.
-
----
-
-## ✅ SOLUTIONS / HINTS
-1. Attributes could include: EmployeeID, Name, Department, Salary, Joining Date.  
-2. Searching would take a **long time manually**, maybe hours.  
-3. Total salaries would require **manual addition**, prone to mistakes.  
-4. Drawbacks: slow searching, error-prone, no scalability.
 
 ---
 
