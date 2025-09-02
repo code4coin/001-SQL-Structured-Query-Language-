@@ -56,7 +56,8 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
   <summary>✅ Solution:</summary>
   
   **EmployeeID: 4014**  
-  *(Hint: Use FILTER or VLOOKUP)*
+  *(Hint: Use FILTER or VLOOKUP) - =INDEX(A:A, MATCH(1, (B:B="Robert Miller")*(C:C="HR"), 0)) make sure to press ctrl+shift+entre instead of purely enter*
+  *VLOOP - =VLOOKUP("Robert MillerHR", CHOOSE({1,2}, B:B&C:C, A:A), 2, FALSE) make sure to press ctrl+shift+entre instead of purely enter*
 </details>
 
 2. Total number of employees in *Finance* Department  
@@ -64,7 +65,7 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
   <summary>✅ Solution:</summary>
   
   **Employees in Finance Department: 1710**  
-  *(Hint: Use COUNTIF function)*
+  *(Hint: Use COUNTIF function - =COUNTIF(C:C, "Finance"))*
 </details>
 
 3. Average salary of all employees  
@@ -72,7 +73,7 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
   <summary>✅ Solution:</summary>
   
   **Employees Average Salary: 90170.32**  
-  *(Hint: Use AVERAGE function on the Salary column)*
+  *(Hint: Use AVERAGE function on the Salary column - =AVERAGE(D:D))*
 </details>
 
 ---
