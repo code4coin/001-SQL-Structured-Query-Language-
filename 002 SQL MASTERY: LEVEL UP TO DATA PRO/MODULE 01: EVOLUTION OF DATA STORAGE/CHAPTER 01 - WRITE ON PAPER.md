@@ -42,9 +42,9 @@ Your manager asks you to record details of **10,000 employees** manually on pape
 
 > METADATA
 
-- employee_data is a text file
-- each row represent individual employee in the organization
-- each row consist of employee information such as employee id, name, department, salary
+- employee_data is a text file  
+- each row represents an individual employee  
+- columns: EmployeeID, Name, Department, Salary  
 
 > Now I need your help with following tasks, please
 1. What is the employee id of **Robert Miller** from *HR* Department
