@@ -1,3 +1,10 @@
+<p align="center">
+<a href="./CHAPTER%2001%20-%20WRITE%20ON%20PAPER.md">⬅️ CHAPTER 01 - WRITE ON PAPER</a>
+&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="./CHAPTER%2003%20-%20DISCOVER%20DATABASE.md">CHAPTER 03 – DISCOVER DATABASE ➡️</a>
+</p>
+
+---
 <h1 align="center">CHAPTER 02 - 📊 USING SPREADSHEET</h1>
 
 ---
@@ -90,11 +97,6 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
 > 💡 **Key takeaway:**  
 Spreadsheets reduce errors, save time, and make data manipulation much easier. They are the **bridge between manual records and databases**.
 
----
-
-## 📎 NEXT CHAPTER
-[CHAPTER 01 - WRITE ON PAPER](./CHAPTER%2001%20-%20WRITE%20ON%20PAPER.md) ⬅️ 
-➡️ [CHAPTER 03 – DISCOVER DATABASE](CHAPTER%2003%20-%20DISCOVER%20DATABASE.md)
 
 ---
 
@@ -103,3 +105,5 @@ Spreadsheets reduce errors, save time, and make data manipulation much easier. T
 - 🎥 [YouTube](https://www.youtube.com/@code4coin)
 - 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
 - 📸 [Instagram](https://www.instagram.com/code4coin/)
+
+---
