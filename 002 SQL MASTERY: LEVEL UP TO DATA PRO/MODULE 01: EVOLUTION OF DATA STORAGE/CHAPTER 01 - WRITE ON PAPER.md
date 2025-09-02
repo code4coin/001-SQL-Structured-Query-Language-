@@ -38,7 +38,7 @@ Your manager asks you to record details of **10,000 employees** manually on pape
 
 ## 💪 MINI EXERCISES
 > DATA SOURCE
-- [employee_data.txt](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY%3A%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2001%3A%20EVOLUTION%20OF%20DATA%20STORAGE/DATASETS/employee_data.txt)
+- [employee_data.txt](./DATASETS/employee_data.txt)
 
 > METADATA
 
