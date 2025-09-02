@@ -56,8 +56,9 @@ And **SPREADSHEET** is our answer, therefore we move record details of **10,000 
   <summary>✅ Solution:</summary>
   
   **EmployeeID: 4014**  
-  *(Hint: Use FILTER or VLOOKUP) - =INDEX(A:A, MATCH(1, (B:B="Robert Miller")*(C:C="HR"), 0)) make sure to press ctrl+shift+entre instead of purely enter*
-  *VLOOP - =VLOOKUP("Robert MillerHR", CHOOSE({1,2}, B:B&C:C, A:A), 2, FALSE) make sure to press ctrl+shift+entre instead of purely enter*
+  *(Hint: Use FILTER or VLOOKUP; make sure to press ctrl+shift+entre instead of purely enter)*- 
+  - *=INDEX(A:A, MATCH(1, (B:B="Robert Miller")*(C:C="HR"), 0)) *
+  - *VLOOP - =VLOOKUP("Robert MillerHR", CHOOSE({1,2}, B:B&C:C, A:A), 2, FALSE) make sure to press ctrl+shift+entre instead of purely enter*
 </details>
 
 2. Total number of employees in *Finance* Department  
