@@ -1,3 +1,8 @@
+<p align="center">
+|&nbsp;&nbsp;&nbsp;
+<a href="./CHAPTER%2002%20-%20USING%20SPREADSHEET.md">CHAPTER 02 - USING SPREADSHEET ➡️</a>
+</p>
+
 ---
 <h1 align="center">CHAPTER 01 - 📝 WRITE ON PAPER</h1>
 
