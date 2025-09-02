@@ -93,7 +93,8 @@ Spreadsheets reduce errors, save time, and make data manipulation much easier. T
 ---
 
 ## 📎 NEXT CHAPTER
-➡️ [Go to Chapter 3 – Databases 🗄️](chapter-03-database.md)
+[CHAPTER 01 - WRITE ON PAPER](./CHAPTER%2001%20-%20WRITE%20ON%20PAPER.md) ⬅️ 
+➡️ [CHAPTER 03 – DISCOVER DATABASE](CHAPTER%2003%20-%20DISCOVER%20DATABASE.md)
 
 ---
 
