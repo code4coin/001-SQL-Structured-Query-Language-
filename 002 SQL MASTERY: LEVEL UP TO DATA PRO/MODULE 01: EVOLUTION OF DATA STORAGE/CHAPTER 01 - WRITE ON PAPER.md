@@ -20,7 +20,7 @@
 ## 🧱 STORY FORMAT
 
 > **Scenario:**  
-Your manager asks you to record details of **1000 employees** manually on paper.  
+Your manager asks you to record details of **10,000 employees** manually on paper.  
 - You spend days writing.  
 - When asked about a single employee, you must scan **all pages manually**.  
 - When asked to calculate total salaries, averages, or department stats, it becomes **impractical**.  
