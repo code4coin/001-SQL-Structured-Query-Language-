@@ -1,3 +1,4 @@
+
 # 📘 SQL MASTERY ROADMAP (Beginner → Data Pro)
 
 Welcome to the **SQL Mastery Roadmap** — a complete **21-module journey** that takes you from a complete beginner to an advanced SQL expert. 🎯  
@@ -18,4 +19,6 @@ Each module includes **core concepts**, **code snippets**, and **hands-on challe
 - 📜 Write on Paper
 - 📊 Using Spreadsheet
 - 🗄️ Discovering Database
+---
+
 
