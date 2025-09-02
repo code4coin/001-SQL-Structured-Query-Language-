@@ -71,11 +71,11 @@ Your manager asks you to record details of **10,000 employees** manually on pape
 ---
 ## 🔍 Observations from the MINI EXERCISES
 
-> **Searching for a single record:** Looking up one record is manageable, but doing it regularly in a large dataset quickly becomes tedious. It highlights the limits of manual searching.
+> 📌 **Searching for a single record:** Looking up one record is manageable, but doing it regularly in a large dataset quickly becomes tedious. It highlights the limits of manual searching.
 
-> **Counting employees in a department:** Counting, for example, employees in Finance may seem simple, but a single error can force you to start over. This shows how easy it is to make mistakes with manual tallying.
+> 📌 **Counting employees in a department:** Counting, for example, employees in Finance may seem simple, but a single error can force you to start over. This shows how easy it is to make mistakes with manual tallying.
 
-> **Summing large numbers:** Adding thousands of salaries by hand is impractical—your calculator might not survive! This underscores the need for automated tools to handle computations reliably.
+> 📌 **Summing large numbers:** Adding thousands of salaries by hand is impractical—your calculator might not survive! This underscores the need for automated tools to handle computations reliably.
 
 ## 📎 NEXT CHAPTER
 ➡️ [Go to Chapter 2 – Spreadsheets 📊](chapter-02-spreadsheet.md)
