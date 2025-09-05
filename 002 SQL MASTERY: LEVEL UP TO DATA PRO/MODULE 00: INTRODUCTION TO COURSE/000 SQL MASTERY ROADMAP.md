@@ -26,7 +26,7 @@ Each module includes **core concepts**, **code snippets**, and **hands-on challe
 - 🗄️ Discovering Database
 ---
 
-## **MORE RESOURCES** 🔗
+## 🔗 **MORE RESOURCES** 
 Stay connected and explore more content:
 
 - 📕 [Download Ebook](https://code4coin.gumroad.com/)
