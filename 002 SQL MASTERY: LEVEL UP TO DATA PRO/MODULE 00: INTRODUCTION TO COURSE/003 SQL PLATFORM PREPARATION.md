@@ -151,7 +151,7 @@ INSERT INTO movies (movie_id, title, genre, director, release_year, country, run
 ```
 
 ---
-## **MORE RESOURCES** 🔗
+## 🔗 **MORE RESOURCES** 
 Stay connected and explore more content:
 
 - 📕 [Download Ebook](https://code4coin.gumroad.com/)
