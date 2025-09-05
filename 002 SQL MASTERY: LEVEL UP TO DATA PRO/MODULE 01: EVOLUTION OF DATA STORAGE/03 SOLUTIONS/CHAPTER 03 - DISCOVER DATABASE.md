@@ -208,19 +208,20 @@ GROUP BY department;
 
 ---
 ## 🧠PRACTISE
-1. Write a query to retrieve field `book_title` from `checkouts` table
-2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
+1. Calculate total salary spended on employee
+2. Total salary spended on department basis
 ---
 ## ✅ SOLUTIONS
-1. Write a query to retrieve field `book_title` from `checkouts` table
+1. Calculate total salary spended on employee
 ```sql
-SELECT book_title
-FROM checkouts;
+SELECT SUM(salary) AS total_salary_spended
+FROM employee;
 ```
-2. Write a query to retrieve all fields from `checkouts` table, using `wildcard (*)`
+2. Total salary spended on department basis
 ```sql
-SELECT *
-FROM checkouts;
+SELECT department, SUM(salary) AS total_salary_spended
+FROM employee
+GROUP BY department;
 ```
 ---
 ## 🔗 **MORE RESOURCES** 
