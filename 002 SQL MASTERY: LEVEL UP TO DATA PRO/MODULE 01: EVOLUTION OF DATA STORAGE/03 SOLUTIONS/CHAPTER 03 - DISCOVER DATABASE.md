@@ -42,6 +42,7 @@ CREATE TABLE table_name (
 ```
 
 ```sql
+-- Format to insert data in a database table
 INSERT INTO table_name (column1, column2, column3)
 VALUES (value1, value2, value3);
 ```
@@ -81,7 +82,7 @@ FROM people;
 ```
 <br>
 
-> **TRY YOURSELF: [CLICK TO EXECUTE QUERIES](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md)**
+> **TRY YOURSELF: [CLICK TO EXECUTE QUERIES](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY:%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2000:%20INTRODUCTION%20TO%20COURSE/003%20SQL%20PLATFORM%20PREPARATION.md)**
 
 <br>
 
@@ -141,7 +142,7 @@ FROM → SELECT
 - Replace specific column names with the wildcard (*) in a SELECT statement to fetch all columns from the table.
 ---
 ## 💪PLATFORM
-Before moving to the exercises, we need a platform with tables and data: [PLATFORM]([https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/001%20SQL%20FOR%20DATA%20ENGINEERS/002%20SAMPLE%20DATA/002%20PATRONS%20DATA.md](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY%3A%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2000%3A%20INTRODUCTION%20TO%20COURSE/003%20SQL%20PLATFORM%20PREPARATION.md))
+Before moving to the exercises, we need a platform with tables and data: [PLATFORM](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY:%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2000:%20INTRODUCTION%20TO%20COURSE/003%20SQL%20PLATFORM%20PREPARATION.md)
 
 ---
 ## DATA PREPARATION
