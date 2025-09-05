@@ -155,8 +155,10 @@ INSERT INTO movies (movie_id, title, genre, director, release_year, country, run
 
 Stay connected and explore more content:
 
-- **LinkedIn:** [https://www.linkedin.com/in/nitin22/](https://www.linkedin.com/in/nitin22/)
-- **YouTube:** [https://www.youtube.com/@code4coin](https://www.youtube.com/@code4coin)
-- **Instagram:** [https://www.instagram.com/code4coin/](https://www.instagram.com/code4coin/)
-
+## 🔗 Resources & Links
+- 📕 [Download Ebook](https://code4coin.gumroad.com/)
+- 🎥 [YouTube](https://www.youtube.com/@code4coin)
+- 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
+- 📸 [Instagram](https://www.instagram.com/code4coin/)
+  
 ---
