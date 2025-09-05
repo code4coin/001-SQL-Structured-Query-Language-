@@ -83,7 +83,7 @@ Your manager asks you to record details of **10,000 employees** manually on pape
 > 📌 **Summing large numbers:** Adding thousands of salaries by hand is impractical—your calculator might not survive! This underscores the need for automated tools to handle computations reliably.
 ---
 
-## **MORE RESOURCES** 🔗
+## 🔗 **MORE RESOURCES** 
 Stay connected and explore more content:
 
 - 📕 [Download Ebook](https://code4coin.gumroad.com/)
