@@ -128,7 +128,7 @@ FROM employee;
 </details>
 
 ---
-## 💡TIP TO REMEMBER
+## 💡 TIP TO REMEMBER
 > **ORDER OF EXECUTION**
 ```sql 
 FROM → SELECT
@@ -141,11 +141,11 @@ FROM → SELECT
 > **RETRIEVE ALL COLUMNS**
 - Replace specific column names with the wildcard (*) in a SELECT statement to fetch all columns from the table.
 ---
-## 💪PLATFORM
+## 🖥️ PLATFORM
 Before moving to the exercises, we need a platform with tables and data: [PLATFORM](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY:%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2000:%20INTRODUCTION%20TO%20COURSE/003%20SQL%20PLATFORM%20PREPARATION.md)
 
 ---
-## DATA PREPARATION
+## 🧪 DATA PREPARATION
 Before moving into exercise, we need to prepare table with data in database: [SQL QUERY](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY%3A%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2001%3A%20EVOLUTION%20OF%20DATA%20STORAGE/00%20DATASETS/employee_data_table.sql)
 
 ---
