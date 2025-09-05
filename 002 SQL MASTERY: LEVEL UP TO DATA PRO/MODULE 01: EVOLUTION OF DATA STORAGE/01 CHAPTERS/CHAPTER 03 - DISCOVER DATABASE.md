@@ -137,8 +137,12 @@ SELECT department AS Department, AVG(salary) AS "Average Salary"
 
 ---
 
-## 🔗 Resources & Links
+## 🔗 **MORE RESOURCES** 
+Stay connected and explore more content:
+
 - 📕 [Download Ebook](https://code4coin.gumroad.com/)
 - 🎥 [YouTube](https://www.youtube.com/@code4coin)
 - 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
 - 📸 [Instagram](https://www.instagram.com/code4coin/)
+  
+---
