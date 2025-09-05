@@ -74,11 +74,11 @@ Table: **`employee`**
 
 > **SQL QUERY EXAMPLE:**
 
-❓**Problem Statement**: From `people` table, retrieve all `names` stored inside.
+❓**Problem Statement**: From `employee` table, retrieve all `names` stored inside.
 ```sql
 SELECT
   name
-FROM people;
+FROM employee;
 ```
 <br>
 
