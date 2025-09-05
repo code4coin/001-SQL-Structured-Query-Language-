@@ -152,10 +152,8 @@ INSERT INTO movies (movie_id, title, genre, director, release_year, country, run
 
 ---
 ## **MORE RESOURCES** 🔗
-
 Stay connected and explore more content:
 
-## 🔗 Resources & Links
 - 📕 [Download Ebook](https://code4coin.gumroad.com/)
 - 🎥 [YouTube](https://www.youtube.com/@code4coin)
 - 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
