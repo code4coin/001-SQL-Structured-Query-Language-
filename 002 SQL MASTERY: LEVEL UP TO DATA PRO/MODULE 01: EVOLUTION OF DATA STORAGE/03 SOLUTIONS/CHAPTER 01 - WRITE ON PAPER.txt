@@ -1,0 +1,52 @@
+Step 1: Record the Guests
+ Write down the names of employees in each category:
+	Who will drink soft drinks
+	Who will drink juice
+	Who will consume alcohol
+	Who are non-vegetarians
+	Who will eat only vegetables
+
+Step 2: Analyze the Data
+📝 Intern Exercise: Party Guest List
+
+Here’s the list of employees and their preferences. Write them down on paper first, then try to answer the questions that follow.
+
+1. Category: DRINK
+	Soft drinks: Alice, Bob, David
+	Juice: Emma, Grace, Henry
+	Alcohol: Bob, Carol, Henry
+
+2. Category: FOOD
+	Non-vegetarians: Alice, Carol, Henry
+	Vegetarians only: Emma, Grace, David
+
+Challenge Questions:
+
+PROBLEM STATEMENT 01: How many people will drink any kind of drink (soft drinks, juice, or alcohol)?
+	ANALYSIS:   
+	            Soft: {Alice, Bob, David}; 
+	            Juice: {Emma, Grace, Henry};
+	            Alcohol: {Bob, Carol, Henry};
+	            TOTAL DRINKERS: {Alice, Bob, David, Emma, Grace, Henry, Carol}
+	            OBSERVATION: Each category has 3 members, so result should be 3 (category)* 3 (members per category) = 9
+			              Interesting, total drinker are 7, why? because few people like Henry is in more than 1 category.
+						  
+PROBLEM STATEMENT 02: How many will drink juice and eat meat?
+	ANALYSIS:  
+	            Juice: {Emma, Grace, Henry};
+	            Non-vegetarians: {Alice, Carol, Henry};
+	            TOTAL JUICE + Non-vegetarians: {Emma, Grace, Henry, Alice, Carol}
+	            OBSERVATION: Members in Juice and Non-vegetarians are 3 each, instead of getting total people as 6
+						               Our count comes to 5, again why? Its Hengry again (trusty me change the name to HUNGRY, lol)
+
+PROBLEM STATEMENT 03: How many will neither drink alcohol nor eat meat?
+	ANALYSIS:  
+	            All Employees: {Alice, Bob, David, Emma, Grace, Hengry}
+	            Alcohol + Non-vegetarians: {Bob, Carol, Hengry, Alice}
+	            Employees having neither {Alcohol + Non-vegetarians}: {All Employees} - {Alcohol + Non-vegetarians} = {David, Emma, Grace}
+	            So, such 3 employees avaiable - {David, Emma, Grace}
+
+Note - 
+	   1. This exercise uses simple observation and basic set logic (we’ll cover it later in the book).
+	   2. With just a few names, observation works fine. But imagine trying the same for 100, 200, or even 1,000 employees!
+
