@@ -167,7 +167,7 @@ FROM employee;
   
 ```sql
 SELECT department, COUNT(*) AS department_headcount
-FROM patrons
+FROM employee
 GROUP BY department;
 ```
 </details>
@@ -198,7 +198,7 @@ GROUP BY department;
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT department
+SELECT department,
        MIN(salary) AS employee_min_salary,
        MAX(salary) AS employee_max_salary
 FROM employee
