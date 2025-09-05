@@ -223,10 +223,12 @@ SELECT *
 FROM checkouts;
 ```
 ---
-## 🔗**MORE RESOURCES** 
-
+## 🔗 **MORE RESOURCES** 
 Stay connected and explore more content:
 
-- **LinkedIn:** [https://www.linkedin.com/in/nitin22/](https://www.linkedin.com/in/nitin22/)  
-- **YouTube:** [https://www.youtube.com/@code4coin](https://www.youtube.com/@code4coin)  
-- **Instagram:** [https://www.instagram.com/code4coin/](https://www.instagram.com/code4coin/)  
+- 📕 [Download Ebook](https://code4coin.gumroad.com/)
+- 🎥 [YouTube](https://www.youtube.com/@code4coin)
+- 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
+- 📸 [Instagram](https://www.instagram.com/code4coin/)
+  
+---
