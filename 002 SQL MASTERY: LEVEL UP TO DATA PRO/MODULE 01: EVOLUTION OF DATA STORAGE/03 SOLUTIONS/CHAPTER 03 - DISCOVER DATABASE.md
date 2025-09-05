@@ -151,53 +151,58 @@ Before moving into exercise, we need to prepare table with data in database: [SQ
 ---
 ## 💪EXERCISE
 
-1. Retrieving 1 field from patrons table
+1. Total headcount of the organization
 <details>
   <summary>✅ Solution:</summary>
 
 ```sql
-SELECT name
-FROM patrons;
+SELECT COUNT(*)
+FROM employee;
 ```
 </details>
 
-2. Retrieving 2 fields from patrons table
+2. Employees' headcount at the departmental level
 <details>
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT card_id, name
-FROM patrons;
+SELECT department, COUNT(*) AS department_headcount
+FROM patrons
+GROUP BY department;
 ```
 </details>
 
-3. Retrieving 3 fields from patrons table
+3. The average salary of an employee in the organization
 <details>
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT card_id, name, join_year
-FROM patrons;
+SELECT AVG(salary) AS employee_avg_salary
+FROM employee;
 ```
 </details>
 
-4. Retrieving multiple fields from patrons table
+4. Average salary of employees in various departments
 <details>
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT card_id, name, join_year, fines
-FROM patrons;
+SELECT department, AVG(salary) AS employee_avg_salary
+FROM employee
+GROUP BY department;
 ```
 </details>
 
-5. Retrieving ALL fields from patrons table
+5. Minimum and maximum salaries drawn from every department
 <details>
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT *
-FROM patrons;
+SELECT department
+       MIN(salary) AS employee_min_salary,
+       MAX(salary) AS employee_max_salary
+FROM employee
+GROUP BY department;
 ```
 </details>
 
