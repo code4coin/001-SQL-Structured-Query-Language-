@@ -31,3 +31,5 @@ Each module includes **core concepts**, **code snippets**, and **hands-on challe
 - 🎥 [YouTube](https://www.youtube.com/@code4coin)
 - 💼 [LinkedIn](https://www.linkedin.com/in/nitin22/)
 - 📸 [Instagram](https://www.instagram.com/code4coin/)
+
+  ---
