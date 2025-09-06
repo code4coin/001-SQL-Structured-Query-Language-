@@ -146,63 +146,77 @@ Before moving to the exercises, we need a platform with tables and data: [PLATFO
 
 ---
 ## 🧪 DATA PREPARATION
-Before moving into exercise, we need to prepare table with data in database: [SQL QUERY](https://github.com/code4coin/001-SQL-Structured-Query-Language-/blob/main/002%20SQL%20MASTERY%3A%20LEVEL%20UP%20TO%20DATA%20PRO/MODULE%2001%3A%20EVOLUTION%20OF%20DATA%20STORAGE/00%20DATASETS/employee_data_table.sql)
+Before moving into exercise, we need to prepare table with data in database: 
+
+```sql
+-- Creating `BeveragesAndFood` table structure in database"
+CREATE TABLE BeveragesAndFood (
+    Soft_Drink VARCHAR(50),
+    Juice VARCHAR(50),
+    Alcohol VARCHAR(50),
+    Non_Veg VARCHAR(50),
+    Veg VARCHAR(50)
+);
+```
+
+```sql
+-- Inserting data in the table created from above query:
+INSERT INTO BeveragesAndFood (Soft_Drink, Juice, Alcohol, Non_Veg, Veg) VALUES
+('Alice', 'Emma', 'Bob', 'Alice', 'Emma'),
+('Bob', 'Grace', 'Carol', 'Carol', 'Grace'),
+('David', 'Henry', 'Henry', 'Henry', 'David');
+```
 
 ---
 ## 💪EXERCISE
 
-1. Total headcount of the organization
+1. Total number of people who will have any kind of drink (soft drinks, juice, or alcohol)
 <details>
   <summary>✅ Solution:</summary>
 
 ```sql
-SELECT COUNT(*)
-FROM employee;
+SELECT soft_drink FROM beveragesandfood
+UNION
+SELECT juice FROM beveragesandfood
+UNION
+SELECT alcohol FROM beveragesandfood
+;
 ```
 </details>
 
-2. Employees' headcount at the departmental level
+2. Total number of people who will drink juice and eat protein (meat)
 <details>
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT department, COUNT(*) AS department_headcount
-FROM employee
-GROUP BY department;
+SELECT juice FROM beveragesandfood
+UNION
+SELECT non_veg FROM beveragesandfood;
 ```
 </details>
 
-3. The average salary of an employee in the organization
+3. Total number of people who will neither drink alcohol nor eat meat
 <details>
   <summary>✅ Solution:</summary>
   
 ```sql
-SELECT AVG(salary) AS employee_avg_salary
-FROM employee;
-```
-</details>
+SELECT people
+FROM (
+    SELECT Soft_Drink AS people FROM BeveragesAndFood
+    UNION 
+    SELECT Juice FROM BeveragesAndFood
+    UNION
+    SELECT Veg FROM BeveragesAndFood
+) AS all_people
 
-4. Average salary of employees in various departments
-<details>
-  <summary>✅ Solution:</summary>
-  
-```sql
-SELECT department, AVG(salary) AS employee_avg_salary
-FROM employee
-GROUP BY department;
-```
-</details>
-
-5. Minimum and maximum salaries drawn from every department
-<details>
-  <summary>✅ Solution:</summary>
-  
-```sql
-SELECT department,
-       MIN(salary) AS employee_min_salary,
-       MAX(salary) AS employee_max_salary
-FROM employee
-GROUP BY department;
+EXCEPT
+SELECT people FROM
+( 
+    SELECT Alcohol AS people FROM BeveragesAndFood
+    UNION
+    SELECT Non_Veg FROM BeveragesAndFood
+) AS non_veg_alco_people
+;
 ```
 </details>
 
