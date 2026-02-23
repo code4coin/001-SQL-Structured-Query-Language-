@@ -7,9 +7,22 @@
 <!-- ![Progress](https://img.shields.io/badge/Progress-Day%201-blue) -->
 ---
 
-## 🗺️ Complete Roadmap
+## 👤 About This Journey
+
+| | |
+|---|---|
+| 📅 **Duration** | May 1 — June 30, 2026 |
+| ⏰ **Daily Study** | 2 Hours |
+| 🎬 **Daily Recording** | 1 Hour |
+| 🖥️ **Format** | Screen Recording Only (No Face Cam) |
+| 🎯 **Goal** | FAANG Level Python Mastery |
+| 📺 **Channel Angle** | Beginner who just finished SQL, now tackling Python |
+| ▶️ **YouTube** | [code4coin](https://www.youtube.com/@code4coin) |
 
 ---
+
+## 🗺️ Complete Roadmap
+
 
 ### 🟢 WEEK 1 — Absolute Basics
 > *March 1–7 | Hook viewers who are total beginners*
