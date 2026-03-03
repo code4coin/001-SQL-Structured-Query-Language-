@@ -65,7 +65,7 @@ it all goes into making this content free for you.
 | Feature | Standard RDBMS | PostgreSQL |
 |---------|---------------|------------|
 | Tables & Rows | ✅ | ✅ |
-| SQL Support | ✅ | ✅ (177 mandatory features) |
+| SQL Support | ✅ | ✅ (170 mandatory features) |
 | Custom Data Types | ❌ | ✅ |
 | Custom Functions | Limited | ✅ Full support |
 | Multiple Prog. Languages | ❌ | ✅ (PL/pgSQL, Python, Perl, Tcl) |
