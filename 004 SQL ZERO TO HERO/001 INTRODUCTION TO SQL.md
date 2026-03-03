@@ -106,7 +106,7 @@ Beyond querying, SQL also handles:
 
 ---
 
-### 🗣️ **Language**
+### **Language**
 
 SQL is a **formal language** with its own syntax, keywords, and grammar rules — but with an important twist:
 
