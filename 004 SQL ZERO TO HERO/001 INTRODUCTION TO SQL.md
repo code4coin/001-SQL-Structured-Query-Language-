@@ -41,7 +41,7 @@ it all goes into making this content free for you.
 - [Breaking Down the Name](#breaking-down-the-name)
   - [Structured](#structured)
   - [Query](#query)
-  - [Language](#-language)
+  - [Language](#language)
 - [A Brief History](#a-brief-history)
 - [Quick Reference Card](#quick-reference-card)
 
