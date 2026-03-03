@@ -8,7 +8,37 @@
 ![SQL Conformance](https://img.shields.io/badge/SQL%20Core%20Features-177%20Mandatory-F59E0B?style=for-the-badge)
 
 ---
+## ☕ Support This Journey
 
+<div align="center">
+Every query I write, every concept I break down,
+every late-night debugging session —
+it all goes into making this content free for you.
+
+### If this helped you, consider buying me a coffee! 🙏
+
+<a href="https://buymeacoffee.com/code4coin">
+  <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" height="50"/>
+</a>
+
+&nbsp;
+
+| ☕ | What your support means |
+|:---:|:---|
+| **1 Coffee** | Keeps me caffeinated through a 2-hour study session |
+| **3 Coffees** | Funds a full week of content research & notes |
+| **5 Coffees** | Powers an entire month of the SQL Mastery Journey |
+
+&nbsp;
+
+> 💬 *"I'm learning in public, sharing everything for free.*
+> *Your support helps me keep going — one coffee at a time."*
+> — Nitin, **@code4coin**
+
+&nbsp;
+</div>
+
+---
 ## 📋 Table of Contents
 
 - [What is PostgreSQL?](#-what-is-postgresql)
@@ -325,8 +355,14 @@ Known For    Reliability · Extensibility · Standards compliance
 </details>
 
 ---
-
 <div align="center">
+  
+**Every supporter gets a shoutout in the journey log.** 🎉
+
+[![Support Now](https://img.shields.io/badge/☕%20Support%20Now-buymeacoffee.com%2Fcode4coin-FFDD00?style=for-the-badge)](https://buymeacoffee.com/code4coin)
+
+---
+
 
 **Part of the SQL Mastery Journey — March to April 2026**
 
@@ -336,6 +372,5 @@ Known For    Reliability · Extensibility · Standards compliance
 
 *⭐ Star this repo to follow the journey — one query at a time*
 
-</div>
-</details>
 
+</div>
