@@ -39,9 +39,9 @@ it all goes into making this content free for you.
 
 - [What is SQL?](#what-is-sql)
 - [Breaking Down the Name](#breaking-down-the-name)
-  - [Structured](#-structured)
-  - [Query](#-query)
-  - [Language](#-language)
+  - [Structured](#structured)
+  - [Query](#query)
+  - [Language](#language)
 - [A Brief History](#a-brief-history)
 - [Quick Reference Card](#quick-reference-card)
 
