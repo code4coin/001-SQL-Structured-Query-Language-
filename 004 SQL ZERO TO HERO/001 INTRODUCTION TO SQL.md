@@ -41,7 +41,7 @@ it all goes into making this content free for you.
 - [Breaking Down the Name](#breaking-down-the-name)
   - [Structured](#structured)
   - [Query](#query)
-  - [Language](#language)
+  - [Language](#-language)
 - [A Brief History](#a-brief-history)
 - [Quick Reference Card](#quick-reference-card)
 
@@ -106,7 +106,7 @@ Beyond querying, SQL also handles:
 
 ---
 
-### **Language**
+### 🗣️ **Language**
 
 SQL is a **formal language** with its own syntax, keywords, and grammar rules — but with an important twist:
 
