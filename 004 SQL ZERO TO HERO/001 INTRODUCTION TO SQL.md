@@ -3,6 +3,37 @@
 > **An interactive reference guide to understanding SQL's origins, meaning, and design philosophy.**
 
 ---
+## ☕ Support This Journey
+
+<div align="center">
+Every query I write, every concept I break down,
+every late-night debugging session —
+it all goes into making this content free for you.
+
+### If this helped you, consider buying me a coffee! 🙏
+
+<a href="https://buymeacoffee.com/code4coin">
+  <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" height="50"/>
+</a>
+
+&nbsp;
+
+| ☕ | What your support means |
+|:---:|:---|
+| **1 Coffee** | Keeps me caffeinated through a 2-hour study session |
+| **3 Coffees** | Funds a full week of content research & notes |
+| **5 Coffees** | Powers an entire month of the SQL Mastery Journey |
+
+&nbsp;
+
+> 💬 *"I'm learning in public, sharing everything for free.*
+> *Your support helps me keep going — one coffee at a time."*
+> — Nitin, **@code4coin**
+
+&nbsp;
+</div>
+
+---
 
 ## 📋 Table of Contents
 
@@ -154,14 +185,22 @@ The language was originally called **SEQUEL** (Structured English Query Language
 </details>
 
 ---
-
 <div align="center">
+  
+**Every supporter gets a shoutout in the journey log.** 🎉
 
-**Built in public. Learned in public. One query at a time.**
+[![Support Now](https://img.shields.io/badge/☕%20Support%20Now-buymeacoffee.com%2Fcode4coin-FFDD00?style=for-the-badge)](https://buymeacoffee.com/code4coin)
 
-*⭐ Star this repo to follow the journey*
+---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nitin22/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/code4coin)
 
-</div>>
+**Part of the SQL Mastery Journey — March to April 2026**
+
+[![YouTube](https://img.shields.io/badge/YouTube-code4coin-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@code4coin)
+[![GitHub](https://img.shields.io/badge/GitHub-code4coin-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/code4coin)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-nitin22-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nitin22/)
+
+*⭐ Star this repo to follow the journey — one query at a time*
+
+
+</div>
