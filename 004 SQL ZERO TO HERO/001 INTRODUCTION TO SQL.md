@@ -59,7 +59,7 @@ The name was later shortened to **SQL** for trademark reasons, but the core idea
 
 ## Breaking Down the Name
 
-### 🏗️ **Structured**
+### **Structured**
 
 Data in SQL is organized in a **highly structured format**:
 
@@ -81,7 +81,7 @@ ORDER BY last_name ASC;
 
 ---
 
-### 🔍 **Query**
+### **Query**
 
 The **primary purpose** of SQL is to *query* a database — to ask it questions and retrieve meaningful answers.
 
@@ -106,7 +106,7 @@ Beyond querying, SQL also handles:
 
 ---
 
-### 🗣️ **Language**
+### **Language**
 
 SQL is a **formal language** with its own syntax, keywords, and grammar rules — but with an important twist:
 
