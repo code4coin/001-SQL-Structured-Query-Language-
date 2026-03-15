@@ -1,4 +1,4 @@
-# 🔃 Sorting & Pagination — ORDER BY, LIMIT & OFFSET — PostgreSQL
+# 🔃 Sorting — ORDER BY, LIMIT & OFFSET — PostgreSQL
 
 > *Control the order of your results and retrieve only the rows you need — essential for reports, dashboards, and APIs.*
 
